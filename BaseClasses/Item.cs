@@ -4,7 +4,8 @@ namespace BaseClasses
 {
 	public class Item : Entity
 	{
-		public int _weight{ get; set; }
+		public const string MASS_UNIT = "kg";
+		public int _weight{ get; set; }//expressed in Kilograms
 
 	}
 }

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Character", "Character\Char
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInterfaces", "BaseInterfaces\BaseInterfaces.csproj", "{B1F0A9A7-D14F-4D09-BCFC-C589C10D4123}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -23,6 +25,10 @@ Global
 		{88E37072-FD3B-4D55-B95C-DA626F5AD91E}.Debug|x86.Build.0 = Debug|x86
 		{88E37072-FD3B-4D55-B95C-DA626F5AD91E}.Release|x86.ActiveCfg = Release|x86
 		{88E37072-FD3B-4D55-B95C-DA626F5AD91E}.Release|x86.Build.0 = Release|x86
+		{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}.Debug|x86.ActiveCfg = Debug|x86
+		{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}.Debug|x86.Build.0 = Debug|x86
+		{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}.Release|x86.ActiveCfg = Release|x86
+		{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}.Release|x86.Build.0 = Release|x86
 		{A82DF768-9149-43F8-8E7E-5420349C947A}.Debug|x86.ActiveCfg = Debug|x86
 		{A82DF768-9149-43F8-8E7E-5420349C947A}.Debug|x86.Build.0 = Debug|x86
 		{A82DF768-9149-43F8-8E7E-5420349C947A}.Release|x86.ActiveCfg = Release|x86

@@ -15,7 +15,6 @@
   <graph edgedefault="directed" id="G">
     <data key="d7"/>
     <node id="n0">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="123.60000000000002" x="347.4679351037291" y="86.79229308911067"/>
@@ -33,7 +32,6 @@
       </data>
     </node>
     <node id="n1">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="20.791666666666742" width="340.0852503501401" x="256.9319363292193" y="254.83516555059538"/>
@@ -51,7 +49,6 @@
       </data>
     </node>
     <node id="n2">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="181.10000000000002" x="318.7179351037291" y="125.59229308911068"/>
@@ -69,13 +66,12 @@
       </data>
     </node>
     <node id="n3">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="83.33333333333337" width="121.66666666666669" x="348.4346017703957" y="-16.5410402442227"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="52.017578125" x="34.82454427083334" y="32.316080729166686">Hit rating<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="52.017578125" x="34.82454427083337" y="32.316080729166686">Hit rating<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -87,7 +83,6 @@
       </data>
     </node>
     <node id="n4">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="83.33333333333337" width="121.66666666666669" x="735.7567467612048" y="-10.108413482580545"/>
@@ -105,7 +100,6 @@
       </data>
     </node>
     <node id="n5">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="123.60000000000002" x="734.7900800945381" y="93.22491985075283"/>
@@ -123,13 +117,12 @@
       </data>
     </node>
     <node id="n6">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="224.88487394958008" x="706.0400800945382" y="132.02491985075284"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="213.103515625" x="5.890679162290041" y="0.049414062500005684">1 Evasion Rating = 1% more likey to hit<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="213.103515625" x="5.890679162289985" y="0.049414062500005684">1 Evasion Rating = 1% more likey to hit<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -141,13 +134,12 @@
       </data>
     </node>
     <node id="n7">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="24.697916666666742" width="461.7172492997199" x="724.8057663690475" y="238.18626438856802"/>
+          <y:Geometry height="24.697916666666742" width="461.7172492997199" x="678.315669281669" y="244.67325467983017"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="459.578125" x="1.0695621498599621" y="2.9983723958333712">Attackers base hit chance + Attackers hit rating - True evasion = real chance to evade<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="393.572265625" x="34.07249183735996" y="2.9983723958333712">True hit chance - True evasion = real chance to evade = chance to evade<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -159,7 +151,6 @@
       </data>
     </node>
     <node id="n8">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="83.33333333333337" width="121.66666666666669" x="-83.01994430584722" y="-26.371386992296777"/>
@@ -177,13 +168,12 @@
       </data>
     </node>
     <node id="n9">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="55.39520000000002" width="60.31039999999999" x="16.48005569415278" y="66.19527967436977"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="37.357421875" x="11.47648906249998" y="18.34701406250001">Shield<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="37.357421875" x="11.476489062499994" y="18.34701406250001">Shield<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -195,7 +185,6 @@
       </data>
     </node>
     <node id="n10">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="199.60000000000002" x="-50.45757451418075" y="143.41194634103653"/>
@@ -213,7 +202,6 @@
       </data>
     </node>
     <node id="n11">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="199.60000000000002" x="-50.41187138918082" y="172.07861300770327"/>
@@ -231,7 +219,6 @@
       </data>
     </node>
     <node id="n12">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="51.60000000000005" width="246.00000000000006" x="-67.12046513918094" y="200.4119463410368"/>
@@ -252,7 +239,6 @@ amount of damage from that attack
       </data>
     </node>
     <node id="n13">
-      <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="BevelNode">
           <y:Geometry height="78.0" width="155.60000000000002" x="114.30430208333325" y="324.9629453125"/>
@@ -269,7 +255,6 @@ amount of damage from that attack
       </data>
     </node>
     <node id="n14">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="90.41719187675073" width="170.1810224089636" x="9.112154674369549" y="431.1318203125004"/>
@@ -292,7 +277,6 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n15">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="59.00000000000006" width="334.5322478991598" x="41.90344122023794" y="549.5126750700282"/>
@@ -312,7 +296,6 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n16">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="75.62464985994399" width="156.93172268907563" x="190.23796481092398" y="434.3886406250008"/>
@@ -333,13 +316,12 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n17">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="182.4472268907565" x="726.7503490458688" y="187.47085822610302"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="178.421875" x="2.0126759453782483" y="0.049414062500005684">Evasion - stamina = true evasion<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="178.421875" x="2.0126759453781915" y="0.049414062500005684">Evasion - stamina = true evasion<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -351,7 +333,6 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n18">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="181.10000000000002" x="319.7395961900386" y="171.1913126969539"/>
@@ -369,13 +350,12 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n19">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="201.20022759103642" x="732.1437664128154" y="159.5012503829659"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="197.095703125" x="2.0522622330182116" y="0.049414062500005684">1 Stamina = -1% less likely to evade<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="197.095703125" x="2.0522622330182685" y="0.049414062500005684">1 Stamina = -1% less likely to evade<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -387,13 +367,12 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n20">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="19.000000000000057" width="128.9333333333335" x="-132.65347185749354" y="428.6850840336137"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="104.388671875" x="12.272330729166754" y="0.1494140625">True evasion = 8%<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="104.388671875" x="12.272330729166754" y="0.14941406250005684">True evasion = 8%<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -405,13 +384,12 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n21">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="18.80000000000001" width="315.12842436974813" x="358.66131937149936" y="210.33799293154777"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="301.4921875" x="6.818118434874009" y="0.049414062500005684">Base hit chance - stamina + hit rating = True hit chance <y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="301.4921875" x="6.818118434873952" y="0.049414062500005684">Base hit chance - stamina + hit rating = True hit chance <y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -423,13 +401,12 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n22">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="19.000000000000057" width="128.9333333333335" x="386.7658854166659" y="436.53525910364215"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="114.0625" x="7.435416666666754" y="0.14941406250005684">True hit chance 75%<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="114.0625" x="7.435416666666754" y="0.1494140625">True hit chance 75%<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -441,7 +418,6 @@ Evasion rating is 10%
       </data>
     </node>
     <node id="n23">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.769957983193365" width="116.21992296918773" x="247.53814994747876" y="663.4794817927175"/>
@@ -460,7 +436,6 @@ No damage taken<y:LabelModel>
       </data>
     </node>
     <node id="n24">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.769957983193365" width="126.57093837535018" x="49.11796656162409" y="659.8469187675078"/>
@@ -479,7 +454,6 @@ Do you wear a shield?<y:LabelModel>
       </data>
     </node>
     <node id="n25">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.769957983193365" width="126.57093837535018" x="146.6177608543406" y="760.3177871148474"/>
@@ -498,7 +472,6 @@ Do you wear a shield?<y:LabelModel>
       </data>
     </node>
     <node id="n26">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="53.42927170868364" width="163.75931372549027" x="-59.97631302521245" y="752.5468137254933"/>
@@ -518,7 +491,6 @@ Did you block?<y:LabelModel>
       </data>
     </node>
     <node id="n27">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="83.33333333333337" width="121.66666666666669" x="1033.3767337403717" y="51.028290222339024"/>
@@ -536,7 +508,6 @@ Did you block?<y:LabelModel>
       </data>
     </node>
     <node id="n28">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="22.413445378151266" width="162.18105742296927" x="1013.7174725358896" y="156.5838311887257"/>
@@ -555,7 +526,6 @@ Did you block?<y:LabelModel>
       </data>
     </node>
     <node id="n29">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="83.33333333333337" width="121.66666666666669" x="1259.387770811451" y="53.04190465248615"/>
@@ -573,7 +543,6 @@ Did you block?<y:LabelModel>
       </data>
     </node>
     <node id="n30">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.69425770308129" width="202.83231792717095" x="1235.3052428002459" y="152.3777765012258"/>
@@ -592,7 +561,6 @@ Level = Amount of damage reduction<y:LabelModel>
       </data>
     </node>
     <node id="n31">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="71.500262605042" width="190.7924019607844" x="189.94569984243603" y="989.461038165268"/>
@@ -613,7 +581,6 @@ Did your armor reduce damage?<y:LabelModel>
       </data>
     </node>
     <node id="n32">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="41.19625350140069" width="216.45539215686287" x="-69.76967787115319" y="879.7217787114909"/>
@@ -632,7 +599,6 @@ Do he do damage than &gt;=Block amount<y:LabelModel>
       </data>
     </node>
     <node id="n33">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.769957983193365" width="116.21992296918773" x="-145.66932335434274" y="1004.2534313725503"/>
@@ -651,7 +617,6 @@ No damage taken<y:LabelModel>
       </data>
     </node>
     <node id="n34">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.769957983193365" width="116.21992296918773" x="30.22157738095052" y="1001.3948179271733"/>
@@ -669,7 +634,6 @@ No damage taken<y:LabelModel>
       </data>
     </node>
     <node id="n35">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="41.19625350140069" width="224.92440476190492" x="124.94125087534458" y="1101.1718487395085"/>
@@ -688,7 +652,6 @@ Do he do damage than &gt;=yourlevel<y:LabelModel>
       </data>
     </node>
     <node id="n36">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.769957983193365" width="116.21992296918773" x="49.04160539215505" y="1225.7035014005678"/>
@@ -707,7 +670,6 @@ No damage taken<y:LabelModel>
       </data>
     </node>
     <node id="n37">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="30.769957983193365" width="188.67703081232497" x="285.8085259103607" y="1222.2949579832084"/>
@@ -726,13 +688,12 @@ Take remaining damage<y:LabelModel>
       </data>
     </node>
     <node id="n38">
-      <data key="d5"/>
       <data key="d6">
         <y:ShapeNode>
           <y:Geometry height="25.78431372549022" width="172.73109243697496" x="325.44431955674145" y="346.6102279589293"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="156.736328125" x="7.997382155987452" y="3.5415709252451393">Hit/Evasion &gt; Shield &gt; armor<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="156.736328125" x="7.997382155987452" y="3.5415709252450824">Hit/Evasion &gt; Shield &gt; armor<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -744,7 +705,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </node>
     <edge id="e0" source="n3" target="n0">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="41.666666666666686" tx="0.0" ty="-9.400000000000006"/>
@@ -755,7 +715,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e1" source="n0" target="n2">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="9.400000000000006" tx="0.0" ty="-9.400000000000006"/>
@@ -766,7 +725,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e2" source="n4" target="n5">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="41.666666666666686" tx="0.0" ty="-9.400000000000006"/>
@@ -777,7 +735,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e3" source="n5" target="n6">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="9.400000000000006" tx="0.0" ty="-9.400000000000006"/>
@@ -788,7 +745,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e4" source="n8" target="n9">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -799,7 +755,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e5" source="n9" target="n10">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -810,7 +765,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e6" source="n10" target="n11">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -821,7 +775,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e7" source="n11" target="n12">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -832,7 +785,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e8" source="n13" target="n14">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -843,7 +795,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e9" source="n14" target="n15">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -854,7 +805,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e10" source="n13" target="n16">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -865,7 +815,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e11" source="n16" target="n15">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -876,7 +825,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e12" source="n17" target="n7">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -887,7 +835,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e13" source="n2" target="n18">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -898,7 +845,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e14" source="n6" target="n19">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -909,7 +855,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e15" source="n19" target="n17">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -920,7 +865,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e16" source="n18" target="n21">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -931,7 +875,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e17" source="n21" target="n1">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -942,7 +885,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e18" source="n16" target="n22">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -953,7 +895,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e19" source="n14" target="n20">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -964,7 +905,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e20" source="n15" target="n23">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -975,7 +915,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e21" source="n15" target="n24">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -986,7 +925,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e22" source="n24" target="n26">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -997,7 +935,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e23" source="n24" target="n25">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1008,7 +945,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e24" source="n27" target="n28">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1019,7 +955,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e25" source="n29" target="n30">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1030,7 +965,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e26" source="n26" target="n25">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1041,7 +975,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e27" source="n25" target="n31">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1052,7 +985,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e28" source="n26" target="n32">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1063,7 +995,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e29" source="n32" target="n33">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1074,7 +1005,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e30" source="n32" target="n34">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1085,7 +1015,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e31" source="n34" target="n31">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1096,7 +1025,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e32" source="n35" target="n36">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1107,7 +1035,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e33" source="n31" target="n35">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1118,7 +1045,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e34" source="n35" target="n37">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1129,7 +1055,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e35" source="n38" target="n13">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1140,7 +1065,6 @@ Take remaining damage<y:LabelModel>
       </data>
     </edge>
     <edge id="e36" source="n13" target="n38">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>

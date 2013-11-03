@@ -2,19 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Character/PlayerCharacter.cs">
     <Files>
-      <File FileName="BaseClasses/Entity.cs" Line="7" Column="35" />
-      <File FileName="BaseClasses/Item.cs" Line="7" Column="34" />
-      <File FileName="BaseInterfaces/IAttackable.cs" Line="1" Column="1" />
-      <File FileName="Character/Character.cs" Line="4" Column="15" />
       <File FileName="BaseClasses/Race.cs" Line="1" Column="1" />
-      <File FileName="BaseClasses/Tile.cs" Line="7" Column="40" />
-      <File FileName="Character/Diet.cs" Line="1" Column="1" />
-      <File FileName="Equipment/Armour.cs" Line="1" Column="1" />
-      <File FileName="Equipment/Equipment.cs" Line="1" Column="1" />
-      <File FileName="Equipment/Inventory.cs" Line="7" Column="9" />
-      <File FileName="Character/PlayerCharacter.cs" Line="13" Column="37" />
-      <File FileName="Character/NonPlayerCharacter.cs" Line="5" Column="22" />
-      <File FileName="Character/Faction.cs" Line="11" Column="4" />
+      <File FileName="Character/ICombat.cs" Line="10" Column="22" />
+      <File FileName="Constants/Combat.cs" Line="7" Column="45" />
+      <File FileName="Character/NonPlayerCharacter.cs" Line="5" Column="54" />
+      <File FileName="Character/PlayerCharacter.cs" Line="55" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,11 +14,13 @@
           <Node name="BaseClasses" expanded="True">
             <Node name="References" expanded="True" />
           </Node>
-          <Node name="BaseInterfaces" expanded="True" />
+          <Node name="BaseInterfaces" expanded="True">
+            <Node name="References" expanded="True" />
+          </Node>
           <Node name="Character" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="PlayerCharacter.cs" selected="True" />
           </Node>
+          <Node name="Constants" expanded="True" selected="True" />
           <Node name="Equipment" expanded="True" />
         </State>
       </Pad>

@@ -2,7 +2,7 @@ using System;
 
 namespace Character
 {
-	public class NonPlayerCharacter : Character
+	public class NonPlayerCharacter : Character//, ICombat
 	{
 	}
 }

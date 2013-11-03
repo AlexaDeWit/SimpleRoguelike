@@ -5,10 +5,15 @@ using BaseClasses;
 namespace Equipment
 {
 	public class Inventory
-	{
+	{	
 		private List<BaseClasses.Item> _items;
 		public int _weightLimit{ get; set; }
-		public int TotalWeight(){
+
+		public Inventory(){
+			_items = new List<Item>();
+		}
+
+		public int GetTotalWeight(){
 			int sum=0;//running total
 			foreach(Item oneItem in _items){
 				sum += oneItem._weight;
@@ -18,9 +23,6 @@ namespace Equipment
 		public void PickUpItem (Item item)
 		{
 			_items.Add(item);
-		}
-		public Inventory(){
-			_items = new List<Item>();
 		}
 	}
 

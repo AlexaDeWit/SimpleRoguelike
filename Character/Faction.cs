@@ -2,7 +2,7 @@ using System;
 
 namespace Character
 {
-	public struct Faction
+	public class Faction
 	{
 		string _factionName;
 		public override string ToString ()
