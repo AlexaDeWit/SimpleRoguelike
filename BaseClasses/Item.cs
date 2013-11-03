@@ -4,9 +4,8 @@ namespace BaseClasses
 {
 	public class Item : Entity
 	{
-		public Item ()
-		{
-		}
+		public int _weight{ get; set; }
+
 	}
 }
 

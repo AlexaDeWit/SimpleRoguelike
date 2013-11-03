@@ -2,8 +2,11 @@ using System;
 
 namespace Character
 {
-	public class NonPlayerCharacter : Character
+	public class Diet
 	{
+		public Diet ()
+		{
+		}
 	}
 }
 

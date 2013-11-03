@@ -6,7 +6,7 @@
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A82DF768-9149-43F8-8E7E-5420349C947A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>BaseClasses</RootNamespace>
     <AssemblyName>BaseClasses</AssemblyName>
   </PropertyGroup>

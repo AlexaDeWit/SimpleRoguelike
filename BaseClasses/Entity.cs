@@ -4,9 +4,7 @@ namespace BaseClasses
 {
 	public class Entity
 	{
-		public Entity ()
-		{
-		}
+		public string _name{ get; set; }
 	}
 }
 
