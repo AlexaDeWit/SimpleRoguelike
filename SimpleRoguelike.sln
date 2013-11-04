@@ -11,12 +11,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInterfaces", "BaseInter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level", "Level\Level.csproj", "{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceCreator", "RaceCreator\RaceCreator.csproj", "{189D12B8-23E9-40DC-AB7B-070F9024AE8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Debug|x86.ActiveCfg = Debug|x86
+		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Debug|x86.Build.0 = Debug|x86
+		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Release|x86.ActiveCfg = Release|x86
+		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Release|x86.Build.0 = Release|x86
 		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Debug|x86.ActiveCfg = Debug|x86
 		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Debug|x86.Build.0 = Debug|x86
 		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Release|x86.ActiveCfg = Release|x86
@@ -33,12 +41,16 @@ Global
 		{A82DF768-9149-43F8-8E7E-5420349C947A}.Debug|x86.Build.0 = Debug|x86
 		{A82DF768-9149-43F8-8E7E-5420349C947A}.Release|x86.ActiveCfg = Release|x86
 		{A82DF768-9149-43F8-8E7E-5420349C947A}.Release|x86.Build.0 = Release|x86
+		{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}.Debug|x86.ActiveCfg = Debug|x86
+		{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}.Debug|x86.Build.0 = Debug|x86
+		{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}.Release|x86.ActiveCfg = Release|x86
+		{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}.Release|x86.Build.0 = Release|x86
 		{B1F0A9A7-D14F-4D09-BCFC-C589C10D4123}.Debug|x86.ActiveCfg = Debug|x86
 		{B1F0A9A7-D14F-4D09-BCFC-C589C10D4123}.Debug|x86.Build.0 = Debug|x86
 		{B1F0A9A7-D14F-4D09-BCFC-C589C10D4123}.Release|x86.ActiveCfg = Release|x86
 		{B1F0A9A7-D14F-4D09-BCFC-C589C10D4123}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = BaseClasses\BaseClasses.csproj
+		StartupItem = RaceCreator\RaceCreator.csproj
 	EndGlobalSection
 EndGlobal

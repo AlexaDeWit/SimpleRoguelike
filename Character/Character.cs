@@ -3,7 +3,7 @@ using Equipment;
 
 namespace Character
 {
-	public abstract class Character : BaseClasses.Entity 
+	public abstract class Character : BaseClasses.Entity, ICombat
 	{
 		//Character Stats
 		public BaseClasses.Race _race{ get; set; }
@@ -29,6 +29,12 @@ namespace Character
 		public long _currency{ get; set; }
 
 
+		public abstract int GetArmourValue();
+		public abstract double GetBlockChance();
+		public abstract int GetBlockAmmount();
+		public abstract double GetStrikeChance();
+		public abstract double GetEvasionChance();
+		public abstract int GetCombatLevel();
 
         public void SetLoadout(Armour helm, Armour boots, Armour chest, Armour pants, Weapon weapon, Accessory ring, Accessory neck)
         {

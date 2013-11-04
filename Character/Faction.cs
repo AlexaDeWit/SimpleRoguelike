@@ -4,7 +4,7 @@ namespace Character
 {
 	public class Faction
 	{
-		string _factionName;
+		public string _factionName{ get; set; }
 		public override string ToString ()
 		{
 			return _factionName;

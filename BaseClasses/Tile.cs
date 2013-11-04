@@ -2,7 +2,7 @@ using System;
 
 namespace BaseClasses
 {
-	class Tile
+	public class Tile
 	{
 		private bool _isPathable{ get; set; }
 	}

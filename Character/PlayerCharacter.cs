@@ -18,6 +18,7 @@ namespace Character
 		//Inventory
 		private Inventory _inventory{ get; set; }
 
+
 		public int CalculateStamina ()
 		{
 			return 0;
@@ -32,7 +33,8 @@ namespace Character
 		{
 			return 0;
 		}
-		public int GetArmourValue ()
+		//Begin Implementing ICombat, inherited from Character
+		public override int GetArmourValue ()
 		{
 			int totalArmourValue=0;
 			totalArmourValue += _helm._armourValue;
@@ -43,21 +45,23 @@ namespace Character
 			return totalArmourValue;
 
 		}
-		public double GetBlockChance(){
+		public override double GetBlockChance(){
+			//placeholder for full calculations
 			return _shield._blockChance;
 		}
-		public int GetBlockAmmount(){
+		public override int GetBlockAmmount(){
 			return _shield._blockValue;
 		}
-		public double GetStrikeChance(){
+		public override double GetStrikeChance(){
 			return CombatConstants.BASE_HIT_CHANCE;
 		}
-		public double GetEvasionChance(){
+		public override double GetEvasionChance(){
 			return CombatConstants.BASE_EVASION_CHANCE;
 		}
-		public int GetCombatLevel(){
+		public override int GetCombatLevel(){
 			return _level;
 		}
+		//end of ICombat implementation
 	}
 }
 

@@ -1,12 +1,8 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Character/PlayerCharacter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RaceCreator/MainWindow.cs">
     <Files>
-      <File FileName="BaseClasses/Race.cs" Line="1" Column="1" />
-      <File FileName="Character/ICombat.cs" Line="10" Column="22" />
-      <File FileName="Constants/Combat.cs" Line="7" Column="45" />
-      <File FileName="Character/NonPlayerCharacter.cs" Line="5" Column="54" />
-      <File FileName="Character/PlayerCharacter.cs" Line="55" Column="23" />
+      <File FileName="RaceCreator/MainWindow.cs" Line="12" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,8 +16,13 @@
           <Node name="Character" expanded="True">
             <Node name="References" expanded="True" />
           </Node>
-          <Node name="Constants" expanded="True" selected="True" />
+          <Node name="Constants" expanded="True" />
           <Node name="Equipment" expanded="True" />
+          <Node name="Level" expanded="True" />
+          <Node name="RaceCreator" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="MainWindow.cs" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
