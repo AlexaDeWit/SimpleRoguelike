@@ -6,23 +6,23 @@ namespace Equipment
 {
 	public class Inventory
 	{	
-		private List<BaseClasses.Item> _items;
-		public int _weightLimit{ get; set; }
+		private List<BaseClasses.Item> Items;
+		public int WeightLimit{ get; set; }
 
 		public Inventory(){
-			_items = new List<Item>();
+			Items = new List<Item>();
 		}
 
 		public int GetTotalWeight(){
 			int sum=0;//running total
-			foreach(Item oneItem in _items){
-				sum += oneItem._weight;
+			foreach(Item oneItem in Items){
+				sum += oneItem.Weight;
 			}
 			return sum;
 		}
 		public void PickUpItem (Item item)
 		{
-			_items.Add(item);
+			Items.Add(item);
 		}
 	}
 

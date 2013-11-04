@@ -4,7 +4,7 @@ namespace Equipment
 {
 	public class Armour : Equipment
 	{
-		public int _armourValue{ get; set; }
+		public int ArmourValue{ get; set; }
 	}
 }
 

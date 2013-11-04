@@ -4,8 +4,8 @@ namespace Equipment
 {
 	public class Shield : Armour
 	{
-		public double _blockChance{ get; set; }
-		public int _blockValue{ get; set; }
+		public double BlockChance{ get; set; }
+		public int BlockValue{ get; set; }
 	}
 }
 

@@ -4,7 +4,7 @@ namespace BaseClasses
 {
 	public class Tile
 	{
-		private bool _isPathable{ get; set; }
+		public bool IsPathable{ get;private set; }
 	}
 }
 

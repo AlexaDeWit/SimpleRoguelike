@@ -6,46 +6,26 @@ namespace Character
 	public abstract class Character : BaseClasses.Entity, ICombat
 	{
 		//Character Stats
-		public BaseClasses.Race _race{ get; set; }
-		public int _health{ get; set; }
-		public int _mana{ get; set; }
-		public int _level{get;set;}
+		public BaseClasses.Race CharacterRace{ get; set; }
+		public int Health{ get; set; }
+		public int Mana{ get; set; }
+		public int Level{get;set;}
 
 
-		public Faction _faction{ get; set; }
-
-		//Currently Equipped
-
-        public Weapon _weapon { get; set; }
-		public Armour _helm{ get; set; }
-		public Armour _boots{ get; set; }
-		public Armour _chest{ get; set; }
-		public Armour _pants{ get; set; }
-        public Shield _shield { get; set; }
-        public Accessory _ring { get; set; }
-        public Accessory _neck { get; set; }
+		public Faction CharacterFaction{ get; set; }
 
 		//Wallet
-		public long _currency{ get; set; }
+		public long Currency{ get; set; }
 
 
-		public abstract int GetArmourValue();
-		public abstract double GetBlockChance();
-		public abstract int GetBlockAmmount();
-		public abstract double GetStrikeChance();
-		public abstract double GetEvasionChance();
-		public abstract int GetCombatLevel();
+		public abstract int ArmourValue{get;set;}
+		public abstract double BlockChance{ get;set; }
+		public abstract int BlockAmmount{ get;set; }
+		public abstract double StrikeChance{ get; set;}
+		public abstract double EvasionChance{ get; set;}
+		public abstract int CombatLevel{ get; set;}
 
-        public void SetLoadout(Armour helm, Armour boots, Armour chest, Armour pants, Weapon weapon, Accessory ring, Accessory neck)
-        {
-			_helm = helm;
-			_boots = boots;
-			_chest = chest;
-			_pants = pants;
-			_weapon = weapon;
-            _ring = ring;
-            _neck = neck;
-		}
+       
 	}
 
 }

@@ -6,19 +6,28 @@ using Constants;
 
 namespace Character
 {
-	class PlayerCharacter : Character
+	public class PlayerCharacter : Character
 	{
 		//Player Specific Attributes
-		private int _hunger{ get; set; }
-		private int _intelligence{ get; set; }
-		private int _endurance{ get; set; }
-		private int _agility{ get; set; }
-		private int _strength{ get; set; }
-		private int _charisma{ get; set; }
+		public int Hunger{ get; set; }
+		public int Intelligence{ get; set; }
+		public int Endurance{ get; set; }
+		public int Agility{ get; set; }
+		public int Strength{ get; set; }
+		public int Charisma{ get; set; }
 		//Inventory
-		private Inventory _inventory{ get; set; }
+		public Inventory Backpack{ get; set; }
+		//Currently Equipped
+        public Weapon EquippedWeapon { get; set; }
+		public Armour EquippedHelm{ get; set; }
+		public Armour EquippedBoots{ get; set; }
+		public Armour EquippedChest{ get; set; }
+		public Armour EquippedPants{ get; set; }
+        public Shield  EquippedShield{ get; set; }
+        public Accessory EquippedRing { get; set; }
+        public Accessory EquippedNeck { get; set; }
 
-
+		//Derived Attribute Calculations
 		public int CalculateStamina ()
 		{
 			return 0;
@@ -33,35 +42,32 @@ namespace Character
 		{
 			return 0;
 		}
+		//Set a new equipment loadoout
+		public void SetLoadout(Armour helm, Armour boots, Armour chest, Armour pants, Weapon weapon,Shield shield, Accessory ring, Accessory neck)
+        {
+			EquippedHelm = helm;
+			EquippedBoots = boots;
+			EquippedChest = chest;
+			EquippedPants = pants;
+			EquippedWeapon = weapon;
+			EquippedShield = shield;
+            EquippedRing = ring;
+            EquippedNeck = neck;
+		}
 		//Begin Implementing ICombat, inherited from Character
-		public override int GetArmourValue ()
-		{
-			int totalArmourValue=0;
-			totalArmourValue += _helm._armourValue;
-			totalArmourValue += _chest._armourValue;
-			totalArmourValue += _boots._armourValue;
-			totalArmourValue += _pants._armourValue;
-			totalArmourValue += _shield._armourValue;
-			return totalArmourValue;
-
+		public override int ArmourValue {
+			set;
+			get {
+				int totalArmourValue = 0;
+				totalArmourValue += this.EquippedHelm.ArmourValue;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				return totalArmourValue;
+			}
 		}
-		public override double GetBlockChance(){
-			//placeholder for full calculations
-			return _shield._blockChance;
-		}
-		public override int GetBlockAmmount(){
-			return _shield._blockValue;
-		}
-		public override double GetStrikeChance(){
-			return CombatConstants.BASE_HIT_CHANCE;
-		}
-		public override double GetEvasionChance(){
-			return CombatConstants.BASE_EVASION_CHANCE;
-		}
-		public override int GetCombatLevel(){
-			return _level;
-		}
-		//end of ICombat implementation
+			
 	}
 }
 

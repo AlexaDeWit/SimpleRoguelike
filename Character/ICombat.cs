@@ -4,12 +4,12 @@ namespace Character
 {
 	public interface ICombat
 	{
-		int GetArmourValue();
-		double GetBlockChance();
-		int GetBlockAmmount();
-		double GetStrikeChance();
-		double GetEvasionChance();
-		int GetCombatLevel();
+		int ArmourValue{get;}
+		double BlockChance{ get; }
+		int BlockAmmount{ get; }
+		double StrikeChance{ get; }
+		double EvasionChance{ get; }
+		int CombatLevel{ get; }
 	}
 }
 

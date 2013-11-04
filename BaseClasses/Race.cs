@@ -4,12 +4,12 @@ namespace BaseClasses
 {
 	public class Race
 	{
-		public string _raceName{ get; set; }
-		public int _baseStrenth{ get; set; }
-		public int _baseAgility{ get; set; }
-		public int _baseEndurance{ get; set; }
-		public int _baseIntelligence{ get; set; }
-		public int _baseCharisma{ get; set; }
+		public string RaceName{ get;private set; }
+		public int BaseStrenth{ get;private set; }
+		public int BaseAgility{ get;private set; }
+		public int BaseEndurance{ get;private set; }
+		public int BaseIntelligence{ get;private set; }
+		public int BaseCharisma{ get;private set; }
 	}
 }
 
