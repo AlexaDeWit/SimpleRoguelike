@@ -6,7 +6,7 @@ using Constants;
 
 namespace Character
 {
-	class PlayerCharacter : Character, ICombat
+	class PlayerCharacter : Character
 	{
 		//Player Specific Attributes
 		private int _hunger{ get; set; }

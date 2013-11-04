@@ -45,10 +45,6 @@
       <Project>{88E37072-FD3B-4D55-B95C-DA626F5AD91E}</Project>
       <Name>Equipment</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BaseInterfaces\BaseInterfaces.csproj">
-      <Project>{B1F0A9A7-D14F-4D09-BCFC-C589C10D4123}</Project>
-      <Name>BaseInterfaces</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Constants\Constants.csproj">
       <Project>{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}</Project>
       <Name>Constants</Name>
