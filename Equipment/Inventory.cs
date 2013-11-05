@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
-using BaseClasses;
+using Items;
 
 namespace Equipment
 {
 	public class Inventory
 	{	
-		private List<BaseClasses.Item> Items;
+		private List<Item> Items;
 		public int WeightLimit{ get; set; }
 
 		public Inventory(){
@@ -20,9 +20,13 @@ namespace Equipment
 			}
 			return sum;
 		}
-		public void PickUpItem (Item item)
+		public bool PickUpItem (Item item)
 		{
-			Items.Add(item);
+			if (item.Weight + GetTotalWeight () > WeightLimit) {
+				return false;
+			} else {
+				Items.Add (item);
+			}
 		}
 	}
 

@@ -2,8 +2,13 @@ using System;
 
 namespace Character
 {
+	
+	
 	public class NonPlayerCharacter : Character
 	{	
+		public bool Friendly{ get;private set;}
+		public bool Neutral{ get;private set;}
+		public bool Enemy{ get;private set;}
 		//Combat Stats
 		//And Combat Interface implementation, from Character class inheritence
 		public override int ArmourValue{get;set;}

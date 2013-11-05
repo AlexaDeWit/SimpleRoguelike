@@ -15,6 +15,7 @@ namespace Character
 		public int Agility{ get; set; }
 		public int Strength{ get; set; }
 		public int Charisma{ get; set; }
+		public int Experience{ get; set;}
 		//Inventory
 		public Inventory Backpack{ get; set; }
 		//Currently Equipped
@@ -25,7 +26,34 @@ namespace Character
 		public Armour EquippedPants{ get; set; }
         public Shield  EquippedShield{ get; set; }
         public Accessory EquippedRing { get; set; }
-        public Accessory EquippedNeck { get; set; }
+		public Accessory EquippedNeck { get; set; }
+		//Derived Attributes
+		public override int ArmourValue {
+			set;
+			get {
+				int totalArmourValue = 0;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				totalArmourValue += EquippedHelm.ArmourValue;
+				return totalArmourValue;
+			}
+		}
+        
+
+		//Set a new equipment loadoout
+		public void SetLoadout(Armour helm, Armour boots, Armour chest, Armour pants, Weapon weapon,Shield shield, Accessory ring, Accessory neck)
+        {
+			EquippedHelm = helm;
+			EquippedBoots = boots;
+			EquippedChest = chest;
+			EquippedPants = pants;
+			EquippedWeapon = weapon;
+			EquippedShield = shield;
+            EquippedRing = ring;
+            EquippedNeck = neck;
+		}
 
 		//Derived Attribute Calculations
 		public int CalculateStamina ()
@@ -42,32 +70,6 @@ namespace Character
 		{
 			return 0;
 		}
-		//Set a new equipment loadoout
-		public void SetLoadout(Armour helm, Armour boots, Armour chest, Armour pants, Weapon weapon,Shield shield, Accessory ring, Accessory neck)
-        {
-			EquippedHelm = helm;
-			EquippedBoots = boots;
-			EquippedChest = chest;
-			EquippedPants = pants;
-			EquippedWeapon = weapon;
-			EquippedShield = shield;
-            EquippedRing = ring;
-            EquippedNeck = neck;
-		}
-		//Begin Implementing ICombat, inherited from Character
-		public override int ArmourValue {
-			set;
-			get {
-				int totalArmourValue = 0;
-				totalArmourValue += this.EquippedHelm.ArmourValue;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				return totalArmourValue;
-			}
-		}
-			
 	}
 }
 

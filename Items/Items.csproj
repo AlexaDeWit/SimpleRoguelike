@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{88E37072-FD3B-4D55-B95C-DA626F5AD91E}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>Equipment</RootNamespace>
-    <AssemblyName>Equipment</AssemblyName>
+    <ProjectGuid>{4EAAAC93-E335-4DD9-9542-3167DA677546}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Items</RootNamespace>
+    <AssemblyName>Items</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,22 +37,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Equipment.cs" />
-    <Compile Include="Armour.cs" />
-    <Compile Include="Weapon.cs" />
-    <Compile Include="IWeapon.cs" />
-    <Compile Include="Inventory.cs" />
-    <Compile Include="Accessory.cs" />
-    <Compile Include="Shield.cs" />
+    <Compile Include="Item.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BaseClasses\BaseClasses.csproj">
       <Project>{A82DF768-9149-43F8-8E7E-5420349C947A}</Project>
       <Name>BaseClasses</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Items\Items.csproj">
-      <Project>{4EAAAC93-E335-4DD9-9542-3167DA677546}</Project>
-      <Name>Items</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

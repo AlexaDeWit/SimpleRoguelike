@@ -1,27 +1,25 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RaceCreator/MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BaseClasses\Entity.cs">
     <Files>
-      <File FileName="RaceCreator/MainWindow.cs" Line="12" Column="3" />
+      <File FileName="BaseClasses\Entity.cs" Line="8" Column="28" />
+      <File FileName="Items\Item.cs" Line="8" Column="57" />
+      <File FileName="Character\ICombat.cs" Line="1" Column="1" />
+      <File FileName="Character\PlayerCharacter.cs" Line="18" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="BaseClasses" expanded="True">
             <Node name="References" expanded="True" />
+            <Node name="Entity.cs" selected="True" />
           </Node>
-          <Node name="BaseInterfaces" expanded="True">
-            <Node name="References" expanded="True" />
-          </Node>
-          <Node name="Character" expanded="True">
-            <Node name="References" expanded="True" />
-          </Node>
-          <Node name="Constants" expanded="True" />
+          <Node name="Character" expanded="True" />
           <Node name="Equipment" expanded="True" />
+          <Node name="Items" expanded="True" />
           <Node name="Level" expanded="True" />
           <Node name="RaceCreator" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="MainWindow.cs" selected="True" />
           </Node>
         </State>
       </Pad>

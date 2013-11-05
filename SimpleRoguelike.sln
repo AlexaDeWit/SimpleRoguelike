@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level", "Level\Level.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceCreator", "RaceCreator\RaceCreator.csproj", "{189D12B8-23E9-40DC-AB7B-070F9024AE8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Items", "Items\Items.csproj", "{4EAAAC93-E335-4DD9-9542-3167DA677546}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -23,6 +25,10 @@ Global
 		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Debug|x86.Build.0 = Debug|x86
 		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Release|x86.ActiveCfg = Release|x86
 		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Release|x86.Build.0 = Release|x86
+		{4EAAAC93-E335-4DD9-9542-3167DA677546}.Debug|x86.ActiveCfg = Debug|x86
+		{4EAAAC93-E335-4DD9-9542-3167DA677546}.Debug|x86.Build.0 = Debug|x86
+		{4EAAAC93-E335-4DD9-9542-3167DA677546}.Release|x86.ActiveCfg = Release|x86
+		{4EAAAC93-E335-4DD9-9542-3167DA677546}.Release|x86.Build.0 = Release|x86
 		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Debug|x86.ActiveCfg = Debug|x86
 		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Debug|x86.Build.0 = Debug|x86
 		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Release|x86.ActiveCfg = Release|x86

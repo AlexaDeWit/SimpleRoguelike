@@ -40,6 +40,5 @@
     <Compile Include="Entity.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="Race.cs" />
-    <Compile Include="Item.cs" />
   </ItemGroup>
 </Project>
