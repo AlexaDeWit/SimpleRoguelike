@@ -56,7 +56,8 @@
     <Compile Include="Faction.cs" />
     <Compile Include="NonPlayerCharacter.cs" />
     <Compile Include="Diet.cs" />
-    <Compile Include="ICombat.cs" />
     <Compile Include="CombatHandler.cs" />
+    <Compile Include="CombatInstance.cs" />
+    <Compile Include="ICombatCapable.cs" />
   </ItemGroup>
 </Project>

@@ -1,20 +1,19 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BaseClasses\Entity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Character\Character.cs">
     <Files>
-      <File FileName="BaseClasses\Entity.cs" Line="8" Column="28" />
-      <File FileName="Items\Item.cs" Line="8" Column="57" />
-      <File FileName="Character\ICombat.cs" Line="1" Column="1" />
-      <File FileName="Character\PlayerCharacter.cs" Line="18" Column="36" />
+      <File FileName="Character\PlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="Character\Character.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="BaseClasses" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="Entity.cs" selected="True" />
           </Node>
-          <Node name="Character" expanded="True" />
+          <Node name="Character" expanded="True">
+            <Node name="Character.cs" selected="True" />
+          </Node>
           <Node name="Equipment" expanded="True" />
           <Node name="Items" expanded="True" />
           <Node name="Level" expanded="True" />

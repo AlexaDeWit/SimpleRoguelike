@@ -12,13 +12,13 @@ namespace Character
 		double EvasionChance{ get; }
 		int CombatLevel{ get; }
 		int Health{ get; set;}
+		bool CanBlock{ get; }
 
 		//functions
 		int AttackDamage();
 		double DamageReductionPercentage();
-
-		int AttackTarget(ICombatCapable target);
-		int InflictDamage(int damage);
+		double SuccessRoll();
+		int SufferDamage(int damage);
 	}
 }
 

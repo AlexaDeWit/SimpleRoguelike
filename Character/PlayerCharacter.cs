@@ -25,7 +25,7 @@ namespace Character
 		public Armour EquippedChest{ get; set; }
 		public Armour EquippedPants{ get; set; }
         public Shield  EquippedShield{ get; set; }
-        public Accessory EquippedRing { get; set; }
+        public Accessory[] EquippedRings { get; set; }
 		public Accessory EquippedNeck { get; set; }
 		//Derived Attributes
 		public override int ArmourValue {
@@ -43,7 +43,7 @@ namespace Character
         
 
 		//Set a new equipment loadoout
-		public void SetLoadout(Armour helm, Armour boots, Armour chest, Armour pants, Weapon weapon,Shield shield, Accessory ring, Accessory neck)
+		public void SetLoadout(Armour helm, Armour boots, Armour chest, Armour pants, Weapon weapon,Shield shield, Accessory[] rings, Accessory neck)
         {
 			EquippedHelm = helm;
 			EquippedBoots = boots;
@@ -51,25 +51,10 @@ namespace Character
 			EquippedPants = pants;
 			EquippedWeapon = weapon;
 			EquippedShield = shield;
-            EquippedRing = ring;
+            EquippedRings = rings;
             EquippedNeck = neck;
 		}
 
-		//Derived Attribute Calculations
-		public int CalculateStamina ()
-		{
-			return 0;
-		}
-
-		public int CalculateHitRating ()
-		{
-			return 0;
-		}
-
-		public int CalculateEvasionRating ()
-		{
-			return 0;
-		}
 	}
 }
 
