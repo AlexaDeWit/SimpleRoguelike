@@ -1,20 +1,14 @@
 using System;
+using System.Collections.Generic;
 
 namespace Character
 {
 	public class Diet
 	{
-		
-	public bool Meat{ get;private set;}
-	public bool Plant{ get;private set;}
-	public bool Raw{ get;private set;}
-	public bool HumanoidMeat{ get;private set;}
-		
-			public Diet ()
-			{
-			
-			}
-		
+		List<Items.Food> EdibleFoods;
+		public Diet (List<Items.Food> foods)
+		{
+		}
 	}
 	
 }

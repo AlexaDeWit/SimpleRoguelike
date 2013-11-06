@@ -1,6 +1,9 @@
 using System;
+using Character;
+using BaseInterfaces;
 
-namespace Character
+
+namespace Combat
 {
 	public static class CombatHandler
 	{

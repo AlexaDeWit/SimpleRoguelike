@@ -3,7 +3,7 @@ using Equipment;
 
 namespace Character
 {
-	public abstract class Character : BaseClasses.Entity, ICombatCapable
+	public abstract class Character : BaseClasses.Entity, BaseInterfaces.ICombatCapable
 	{
 		//Character Stats
 		public BaseClasses.Race CharacterRace{ get; set; } 

@@ -49,6 +49,14 @@
       <Project>{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}</Project>
       <Name>Constants</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Items\Items.csproj">
+      <Project>{4EAAAC93-E335-4DD9-9542-3167DA677546}</Project>
+      <Name>Items</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseInterfaces\BaseInterfaces.csproj">
+      <Project>{7A8EE257-C753-447E-840A-964720605C94}</Project>
+      <Name>BaseInterfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
@@ -56,8 +64,5 @@
     <Compile Include="Faction.cs" />
     <Compile Include="NonPlayerCharacter.cs" />
     <Compile Include="Diet.cs" />
-    <Compile Include="CombatHandler.cs" />
-    <Compile Include="CombatInstance.cs" />
-    <Compile Include="ICombatCapable.cs" />
   </ItemGroup>
 </Project>

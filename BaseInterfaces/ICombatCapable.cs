@@ -1,6 +1,6 @@
 using System;
 
-namespace Character
+namespace BaseInterfaces
 {
 	public interface ICombatCapable
 	{
