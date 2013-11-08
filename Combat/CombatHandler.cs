@@ -1,6 +1,7 @@
 using System;
 using Character;
 using BaseInterfaces;
+using Constants;
 
 
 namespace Combat
@@ -58,9 +59,26 @@ namespace Combat
 			}
 			return currentAttack;
 		}
-		//placeholder, will store armour damage reduction math
+		//Returns the amount of damage that will be taken after armour is calculated against an attack
 		public static int ArmourDamageReduction(int baseDamage, int armour){
-			return 0;
+			//the 1 represents the adjustment from a percentage of reduction
+			//to a ratio for multiplication
+			//IE. -30% damage taken is damage*70%
+			return baseDamage * (ArmourDamageRatio(armour)+1);
+		}
+		//returns the percentage of damage to be reduced or amplified
+		public static double ArmourDamageRatio (int armour)
+		{
+			double absoluteArmour =Math.Abs (armour);
+			double damageRatio = absoluteArmour / (absoluteArmour + CombatConst.ARMOUR_SCALING_RATIO);
+			//if armour mitigates 30%..
+			// -0.3 if the damage should be reduced
+			// +0.3 if the damage should be amplified.
+			if (armour >= 0) {
+				return 0.0 - damageRatio;
+			} else {
+				return damageRatio;
+			}
 		}
 	}
 }

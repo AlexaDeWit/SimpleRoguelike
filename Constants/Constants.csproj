@@ -37,6 +37,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Combat.cs" />
+    <Compile Include="CombatConst.cs" />
   </ItemGroup>
 </Project>

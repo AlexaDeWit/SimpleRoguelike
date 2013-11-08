@@ -49,6 +49,10 @@
       <Project>{7A8EE257-C753-447E-840A-964720605C94}</Project>
       <Name>BaseInterfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Constants\Constants.csproj">
+      <Project>{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}</Project>
+      <Name>Constants</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CombatInstance.cs" />
