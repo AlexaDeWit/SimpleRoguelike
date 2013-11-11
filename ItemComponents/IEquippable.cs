@@ -1,12 +1,15 @@
 using System;
 using BaseClasses;
+using Constants;
 
 namespace ItemComponents
 {
-	public interface IEquippable
+	public class Equippable
 	{	
-		void OnEquip();
-		void OnUnequip();
+		public int EquipmentSlot{ get; }
+		public Equippable(int itemSlot){
+			EquipmentSlot=itemSlot;
+		}
 	}
 }
 

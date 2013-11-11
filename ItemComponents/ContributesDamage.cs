@@ -4,7 +4,7 @@ using BaseClasses;
 
 namespace ItemComponents
 {
-	public class ContributesDamage : IEquippable
+	public class ContributesDamage : IGrantsEffect
 	{
 		//A set of dice represents nDn, dungeons and dragons style damage calculation
 		private DiceRoll _diceDamage;
@@ -30,10 +30,10 @@ namespace ItemComponents
 		}
 
 		//Interface implementation
-		public void OnEquip(Character owner){
+		public void OnApplication(Character owner){
 			owner.DamageComponents.Add(this);
 		}
-		public void OnUnequip(Character owner){
+		public void OnRemoval(Character owner){
 			owner.DamageComponents.Remove(this);
 		}
 	}

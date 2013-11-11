@@ -11,6 +11,15 @@ namespace BaseClasses
 			DiceSize=diceSize;
 			DiceCount=diceCount;
 		}
+		public int Roll ()
+		{
+			int total;
+			Random rand = new Random ();
+			for (int i=0; i< this.DiceCount; i++) {
+				total += 1 + rand.Next(DiceSize);
+			}
+			return total;
+		}
 	}
 }
 

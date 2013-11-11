@@ -14,6 +14,8 @@ namespace Characters
 		public int Mana{ get; set; }
 		public int ManaRegen{ get; set; }
 		public int Level{get;set;}
+		//Sum of all attack damage sources
+		public List<DiceRoll> DamageComponents=new List<DiceRoll>();
 		
 		//Gender
 		public string Gender{get;set;}
@@ -37,8 +39,14 @@ namespace Characters
 		public abstract double EvasionChance{ get; set;}
 		public abstract int CombatLevel{ get; set;}
 		public abstract bool CanBlock{ get; set; }
-		//Abstract methods
-		public abstract int CalculateDamage();
+		//DamageCalculation
+		public int CalculateDamage ()
+		{
+			int total=0;
+			foreach (DiceRoll d in DamageComponents) {
+				total += d.Roll();
+			}
+		}
 
 		//Percentage Chance
 		public double SuccessRoll ()
