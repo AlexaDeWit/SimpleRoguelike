@@ -9,7 +9,11 @@ namespace Items
 	{
 		//The behaviour of this item is entirely defined
 		//By what components it is given
-		public List<IItemComponent> Components;
+		public List<IItemComponent> Components=new List<IItemComponent>();
+		public T Component<T> () where T : IItemComponent
+		{
+			return Components.OfType<T>().FirstOrDefault();
+		}
 	}
 }
 

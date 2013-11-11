@@ -3,6 +3,7 @@ using Equipment;
 using BaseClasses;
 using Constants;
 using System.Collections.Generic;
+using Items;
 
 
 namespace Characters
@@ -19,28 +20,14 @@ namespace Characters
 		public int Experience{ get; set; }
 		//Inventory
 		public Inventory Backpack{ get; set; }
-		//Sum of all attack damage sources
-		public List<DiceRoll> DamageComponents;
+
 		//Currently Equipped
-        public Weapon EquippedWeapon { get; set; }
-		public Armour EquippedHelm{ get; set; }
-		public Armour EquippedBoots{ get; set; }
-		public Armour EquippedChest{ get; set; }
-		public Armour EquippedPants{ get; set; }
-        public Shield  EquippedShield{ get; set; }
-        public Accessory[] EquippedRings { get; set; }
-		public Accessory EquippedNeck { get; set; }
+		public List<Item> EquippedItems=new List<Item>();
 		//Derived Attributes
 		public override int ArmourValue {
 			set;
 			get {
-				int totalArmourValue = 0;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				totalArmourValue += EquippedHelm.ArmourValue;
-				return totalArmourValue;
+				}
 			}
 		}
         
