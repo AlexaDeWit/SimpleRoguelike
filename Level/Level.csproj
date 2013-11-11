@@ -41,6 +41,7 @@
     <Compile Include="LevelLoader.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="LevelTransition.cs" />
+    <Compile Include="TileType.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BaseClasses\BaseClasses.csproj">

@@ -6,18 +6,23 @@ namespace Level
 {
 	public class Tile : Entity
 	{
-		private Tile[][] _tiles;
+		private Tile[,] _tiles;
 		private int _x;
 		private int _y;
 		public TileType TileStyle;
 		public List<Entity> Contents{ get; }
 
-		public Tile (int x, int y, Tile[][] tiles, TileType type){
+		public Tile (int x, int y, Tile[,] tiles, TileType type){
 			_x = x;
 			_y = y;
 			_tiles = tiles;
 			TileStyle = type;
 			Contents = new List<Entity>();
+		}
+		public void MoveEntity (Tile destination, Entity entity)
+		{
+			destination.Contents.Add(entity);
+			this.Contents.Remove(entity);
 		}
 		//These will return the current tile if the adjacent tile is out of the level bounds
 		//Considering changing it to a wrapping level system.
@@ -65,6 +70,6 @@ namespace Level
 				}
 			}
 		}
-
+		s
 	}
 }

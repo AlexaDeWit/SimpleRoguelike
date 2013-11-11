@@ -64,5 +64,6 @@
     <Compile Include="Faction.cs" />
     <Compile Include="NonPlayerCharacter.cs" />
     <Compile Include="Diet.cs" />
+    <Compile Include="Race.cs" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 using System;
+using BaseClasses;
 
-namespace BaseClasses
+namespace Level
 {
 	public class TileType : Entity
 	{
