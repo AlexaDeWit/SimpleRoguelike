@@ -39,6 +39,8 @@
   <ItemGroup>
     <Compile Include="Level.cs" />
     <Compile Include="LevelLoader.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="LevelTransition.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BaseClasses\BaseClasses.csproj">

@@ -1,15 +1,20 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Combat/CombatHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BaseClasses/Tile.cs">
     <Files>
       <File FileName="Character/Character.cs" Line="1" Column="1" />
-      <File FileName="Combat/CombatHandler.cs" Line="1" Column="1" />
+      <File FileName="Combat/CombatHandler.cs" Line="67" Column="53" />
+      <File FileName="Constants/CombatConst.cs" Line="4" Column="2" />
+      <File FileName="Combat/CombatInstance.cs" Line="1" Column="1" />
+      <File FileName="Level/Level.cs" Line="8" Column="25" />
+      <File FileName="BaseClasses/Tile.cs" Line="18" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="BaseClasses" expanded="True">
             <Node name="References" expanded="True" />
+            <Node name="Tile.cs" selected="True" />
           </Node>
           <Node name="BaseInterfaces" expanded="True">
             <Node name="References" expanded="True" />
@@ -19,7 +24,6 @@
           </Node>
           <Node name="Combat" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="CombatHandler.cs" selected="True" />
           </Node>
           <Node name="Constants" expanded="True" />
           <Node name="Equipment" expanded="True" />

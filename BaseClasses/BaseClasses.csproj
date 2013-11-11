@@ -38,7 +38,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Entity.cs" />
-    <Compile Include="Tile.cs" />
     <Compile Include="Race.cs" />
+    <Compile Include="TileType.cs" />
   </ItemGroup>
 </Project>
