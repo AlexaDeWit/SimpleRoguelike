@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Character
+namespace Characters
 {
 	public class Diet
 	{

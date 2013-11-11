@@ -1,7 +1,7 @@
 using System;
 using BaseClasses;
 
-namespace Equipment
+namespace ItemComponents
 {
 	public interface IEquippable
 	{	

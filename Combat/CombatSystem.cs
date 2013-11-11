@@ -1,5 +1,5 @@
 using System;
-using Character;
+using Characters;
 using BaseInterfaces;
 using Constants;
 

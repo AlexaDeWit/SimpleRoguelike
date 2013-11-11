@@ -1,6 +1,8 @@
 using System;
+using BaseClasses;
+using System.Collections.Generic;
 
-namespace BaseInterfaces
+namespace Combat
 {
 	public interface ICombatCapable
 	{
@@ -13,9 +15,10 @@ namespace BaseInterfaces
 		int CombatLevel{ get; }
 		int Health{ get; set;}
 		bool CanBlock{ get; }
+		List<DiceRoll> DamageComponents;
 
 		//functions
-		int AttackDamage();
+		int CalculateDamage();
 		double DamageReductionPercentage();
 		double SuccessRoll();
 		int SufferDamage(int damage);

@@ -4,7 +4,7 @@ using BaseClasses;
 using Constants;
 
 
-namespace Character
+namespace Characters
 {
 	public class PlayerCharacter : Character
 	{

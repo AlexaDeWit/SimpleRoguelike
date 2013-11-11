@@ -1,9 +1,11 @@
 using System;
 using Equipment;
+using System.Collections.Generic;
+using BaseClasses;
 
-namespace Character
+namespace Characters
 {
-	public abstract class Character : BaseClasses.Entity, BaseInterfaces.ICombatCapable
+	public abstract class Character : BaseClasses.Entity, Combat.ICombatCapable
 	{
 		//Character Stats
 		public Race CharacterRace{ get; set; } 
@@ -35,8 +37,10 @@ namespace Character
 		public abstract double EvasionChance{ get; set;}
 		public abstract int CombatLevel{ get; set;}
 		public abstract bool CanBlock{ get; set; }
+		//Necessary Fields
+		public List<DiceRoll> DamageComponents;
 		//Abstract methods
-		public abstract int AttackDamage();
+		public abstract int CalculateDamage();
 
 		//Percentage Chance
 		public double SuccessRoll ()

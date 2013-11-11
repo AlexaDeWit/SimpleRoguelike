@@ -1,6 +1,6 @@
 using System;
 
-namespace Character
+namespace Characters
 {
 	public class Race
 	{

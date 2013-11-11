@@ -1,7 +1,7 @@
 using System;
 using BaseClasses;
 
-namespace Character
+namespace Characters
 {
 	public class Faction : Entity
 	{

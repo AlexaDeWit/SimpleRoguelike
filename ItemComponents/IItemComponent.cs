@@ -1,6 +1,6 @@
 using System;
 
-namespace Equipment
+namespace ItemComponents
 {
 	//Only exists to give a "bottom level" for components to be grouped together in lists
 	public interface IItemComponent
