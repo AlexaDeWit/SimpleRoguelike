@@ -6,7 +6,7 @@ namespace Character
 	public abstract class Character : BaseClasses.Entity, BaseInterfaces.ICombatCapable
 	{
 		//Character Stats
-		public BaseClasses.Race CharacterRace{ get; set; } 
+		public Race CharacterRace{ get; set; } 
 		public int Health{ get; set; } 
 		public int HealthRegen{ get; set; }
 		public int Mana{ get; set; }

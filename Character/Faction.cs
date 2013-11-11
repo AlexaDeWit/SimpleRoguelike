@@ -1,11 +1,16 @@
 using System;
+using BaseClasses;
 
 namespace Character
 {
-	public class Faction
+	public class Faction : Entity
 	{
-		public int Standings{ get; set; }
-
+		public int BaseStanding{ get; }
+		public Faction(String name, String description, int initialStanding){
+			this.Name=name;
+			this.Description=description;
+			BaseStanding = initialStanding;
+		}
 	}
 }
 

@@ -8,6 +8,7 @@ namespace Character
 		List<Items.Food> EdibleFoods;
 		public Diet (List<Items.Food> foods)
 		{
+			EdibleFoods=foods;
 		}
 	}
 	

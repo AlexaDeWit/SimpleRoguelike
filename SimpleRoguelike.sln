@@ -1,23 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseClasses", "BaseClasses\BaseClasses.csproj", "{A82DF768-9149-43F8-8E7E-5420349C947A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equipment", "Equipment\Equipment.csproj", "{88E37072-FD3B-4D55-B95C-DA626F5AD91E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Character", "Character\Character.csproj", "{6DBA58DB-5038-4843-B876-332F219FBE7E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constants", "Constants\Constants.csproj", "{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Level", "Level\Level.csproj", "{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceCreator", "RaceCreator\RaceCreator.csproj", "{189D12B8-23E9-40DC-AB7B-070F9024AE8E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Items", "Items\Items.csproj", "{4EAAAC93-E335-4DD9-9542-3167DA677546}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Combat", "Combat\Combat.csproj", "{3EE7BF0D-F665-4774-A7EE-8937B9793763}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseInterfaces", "BaseInterfaces\BaseInterfaces.csproj", "{7A8EE257-C753-447E-840A-964720605C94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRoguelike", "SimpleRoguelike.csproj", "{081F1B0E-B65E-4E14-9330-2DC97A0ABFFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,44 +9,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Debug|x86.ActiveCfg = Debug|x86
-		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Debug|x86.Build.0 = Debug|x86
-		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Release|x86.ActiveCfg = Release|x86
-		{189D12B8-23E9-40DC-AB7B-070F9024AE8E}.Release|x86.Build.0 = Release|x86
-		{3EE7BF0D-F665-4774-A7EE-8937B9793763}.Debug|x86.ActiveCfg = Debug|x86
-		{3EE7BF0D-F665-4774-A7EE-8937B9793763}.Debug|x86.Build.0 = Debug|x86
-		{3EE7BF0D-F665-4774-A7EE-8937B9793763}.Release|x86.ActiveCfg = Release|x86
-		{3EE7BF0D-F665-4774-A7EE-8937B9793763}.Release|x86.Build.0 = Release|x86
-		{4EAAAC93-E335-4DD9-9542-3167DA677546}.Debug|x86.ActiveCfg = Debug|x86
-		{4EAAAC93-E335-4DD9-9542-3167DA677546}.Debug|x86.Build.0 = Debug|x86
-		{4EAAAC93-E335-4DD9-9542-3167DA677546}.Release|x86.ActiveCfg = Release|x86
-		{4EAAAC93-E335-4DD9-9542-3167DA677546}.Release|x86.Build.0 = Release|x86
-		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Debug|x86.ActiveCfg = Debug|x86
-		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Debug|x86.Build.0 = Debug|x86
-		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Release|x86.ActiveCfg = Release|x86
-		{6DBA58DB-5038-4843-B876-332F219FBE7E}.Release|x86.Build.0 = Release|x86
-		{7A8EE257-C753-447E-840A-964720605C94}.Debug|x86.ActiveCfg = Debug|x86
-		{7A8EE257-C753-447E-840A-964720605C94}.Debug|x86.Build.0 = Debug|x86
-		{7A8EE257-C753-447E-840A-964720605C94}.Release|x86.ActiveCfg = Release|x86
-		{7A8EE257-C753-447E-840A-964720605C94}.Release|x86.Build.0 = Release|x86
-		{88E37072-FD3B-4D55-B95C-DA626F5AD91E}.Debug|x86.ActiveCfg = Debug|x86
-		{88E37072-FD3B-4D55-B95C-DA626F5AD91E}.Debug|x86.Build.0 = Debug|x86
-		{88E37072-FD3B-4D55-B95C-DA626F5AD91E}.Release|x86.ActiveCfg = Release|x86
-		{88E37072-FD3B-4D55-B95C-DA626F5AD91E}.Release|x86.Build.0 = Release|x86
-		{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}.Debug|x86.ActiveCfg = Debug|x86
-		{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}.Debug|x86.Build.0 = Debug|x86
-		{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}.Release|x86.ActiveCfg = Release|x86
-		{9848311B-3FFD-459C-87D1-E3DD87ADD0A4}.Release|x86.Build.0 = Release|x86
-		{A82DF768-9149-43F8-8E7E-5420349C947A}.Debug|x86.ActiveCfg = Debug|x86
-		{A82DF768-9149-43F8-8E7E-5420349C947A}.Debug|x86.Build.0 = Debug|x86
-		{A82DF768-9149-43F8-8E7E-5420349C947A}.Release|x86.ActiveCfg = Release|x86
-		{A82DF768-9149-43F8-8E7E-5420349C947A}.Release|x86.Build.0 = Release|x86
-		{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}.Debug|x86.ActiveCfg = Debug|x86
-		{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}.Debug|x86.Build.0 = Debug|x86
-		{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}.Release|x86.ActiveCfg = Release|x86
-		{AF0375EF-AA96-47C6-BE82-4AEF55D7843E}.Release|x86.Build.0 = Release|x86
+		{081F1B0E-B65E-4E14-9330-2DC97A0ABFFC}.Debug|x86.ActiveCfg = Debug|x86
+		{081F1B0E-B65E-4E14-9330-2DC97A0ABFFC}.Debug|x86.Build.0 = Debug|x86
+		{081F1B0E-B65E-4E14-9330-2DC97A0ABFFC}.Release|x86.ActiveCfg = Release|x86
+		{081F1B0E-B65E-4E14-9330-2DC97A0ABFFC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = RaceCreator\RaceCreator.csproj
+		StartupItem = SimpleRoguelike.csproj
 	EndGlobalSection
 EndGlobal

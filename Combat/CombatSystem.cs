@@ -6,7 +6,7 @@ using Constants;
 
 namespace Combat
 {
-	public static class CombatHandler
+	public static class CombatSystem
 	{
 		//Allows an attacker to make one attack against a defender using the regular attack system
 		public static CombatInstance RegularAttack(ICombatCapable attacker, ICombatCapable defender){
