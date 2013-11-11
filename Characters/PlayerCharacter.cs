@@ -2,6 +2,7 @@ using System;
 using Equipment;
 using BaseClasses;
 using Constants;
+using System.Collections.Generic;
 
 
 namespace Characters
@@ -15,9 +16,11 @@ namespace Characters
 		public int Agility{ get; set; }
 		public int Strength{ get; set; }
 		public int Charisma{ get; set; }
-		public int Experience{ get; set;}
+		public int Experience{ get; set; }
 		//Inventory
 		public Inventory Backpack{ get; set; }
+		//Sum of all attack damage sources
+		public List<DiceRoll> DamageComponents;
 		//Currently Equipped
         public Weapon EquippedWeapon { get; set; }
 		public Armour EquippedHelm{ get; set; }

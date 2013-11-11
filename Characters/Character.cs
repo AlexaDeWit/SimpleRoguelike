@@ -37,8 +37,6 @@ namespace Characters
 		public abstract double EvasionChance{ get; set;}
 		public abstract int CombatLevel{ get; set;}
 		public abstract bool CanBlock{ get; set; }
-		//Necessary Fields
-		public List<DiceRoll> DamageComponents;
 		//Abstract methods
 		public abstract int CalculateDamage();
 
