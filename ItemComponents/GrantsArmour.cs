@@ -9,10 +9,10 @@ namespace ItemComponents
 		public GrantsArmour(int armour){
 			ArmourValue=armour;
 		}
-		public void OnEquip(Character affected){
+		public void ApplyEffect(Character affected){
 			affected.ArmourValue += this.ArmourValue;
 		}
-		public void OnUnequip(Character affected){
+		public void RemoveEffect(Character affected){
 			affected.ArmourValue -= this.ArmourValue;
 		}
 	}

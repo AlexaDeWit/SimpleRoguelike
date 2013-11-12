@@ -10,7 +10,7 @@ namespace Level
 		private int _x;
 		private int _y;
 		public TileType TileStyle;
-		public List<Entity> Contents{ get; }
+		public List<Entity> Contents{ get; private set;}
 
 		public Tile (int x, int y, Tile[,] tiles, TileType type){
 			_x = x;
@@ -27,7 +27,9 @@ namespace Level
 		//These will return the current tile if the adjacent tile is out of the level bounds
 		//Considering changing it to a wrapping level system.
 		public Tile TileRight {
-			set;
+			set {
+				TileRight = value;
+			}
 			get{
 				if(_tiles.GetLength(0) >= this._x){
 					return _tiles[this._x+1][this._y];
@@ -38,7 +40,9 @@ namespace Level
 			}
 		}
 		public Tile TileLeft {
-			set;
+			set {
+				TileLeft = value;
+			}
 			get{
 				if(this._x>0){
 					return _tiles[this._x-1][this._y];
@@ -49,7 +53,9 @@ namespace Level
 			}
 		}
 		public Tile TileAbove {
-			set;
+			set {
+				TileAbove = value;
+			}
 			get{
 				if(this._y > 0){
 					return _tiles[this._x][this._y-1];
@@ -60,7 +66,9 @@ namespace Level
 			}
 		}
 		public Tile TileBelow {
-			set;
+			set{
+				TileBelow = value;
+			}
 			get{
 				if(_tiles.GetLength(1) >= this._y){
 					return _tiles[this._x][this._y+1];
@@ -70,6 +78,5 @@ namespace Level
 				}
 			}
 		}
-		s
 	}
 }

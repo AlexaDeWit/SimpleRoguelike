@@ -4,17 +4,17 @@ namespace Combat
 {
 	public struct CombatInstance
 	{
-		public int BaseDamage=0;
-		public int DamageBlocked=0;
+		public int BaseDamage;
+		public int DamageBlocked;
 		//Damage done - damage absorbed = actual damage suffered
-		public int DamageReducedByArmour=0;
-		public int DamageAbsorbed=0;
-		public int DamageInflicted=0;
-		public double AttackRoll=0D;
-		public double BypassBlockRoll=0D;
-		public bool DefenderCanBlock=false;
-		public bool WasBlocked=false;
-		public bool AttackSuccess=false;
+		public int DamageReducedByArmour;
+		public int DamageAbsorbed;
+		public int DamageInflicted;
+		public double AttackRoll;
+		public double BypassBlockRoll;
+		public bool DefenderCanBlock;
+		public bool WasBlocked;
+		public bool AttackSuccess;
 
 
 	}

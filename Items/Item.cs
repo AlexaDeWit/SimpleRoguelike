@@ -19,6 +19,13 @@ namespace Items
 		{
 			return Components.OfType<T>().FirstOrDefault();
 		}
+		//Does this Item support this component's features:
+		public bool Supports<T> () where T:IItemComponent
+		{
+			if (Components.OfType<T> ().Count () > 0) {
+				return true;
+			}
+		}
 	}
 }
 

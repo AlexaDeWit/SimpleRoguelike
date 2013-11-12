@@ -30,10 +30,10 @@ namespace ItemComponents
 		}
 
 		//Interface implementation
-		public void OnApplication(Character owner){
+		public void ApplyEffect(Character owner){
 			owner.DamageComponents.Add(this);
 		}
-		public void OnRemoval(Character owner){
+		public void RemoveEffect(Character owner){
 			owner.DamageComponents.Remove(this);
 		}
 	}

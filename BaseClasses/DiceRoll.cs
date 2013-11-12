@@ -4,8 +4,8 @@ namespace BaseClasses
 {
 	public class DiceRoll
 	{
-		public int DiceSize{ get; }
-		public int DiceCount{ get; }
+		public int DiceSize{ get; private set;}
+		public int DiceCount{ get; private set;}
 		public DiceRoll(int diceSize, int diceCount)
 		{
 			DiceSize=diceSize;

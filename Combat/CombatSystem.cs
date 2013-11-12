@@ -1,6 +1,5 @@
 using System;
 using Characters;
-using BaseInterfaces;
 using Constants;
 
 
@@ -12,7 +11,7 @@ namespace Combat
 		public static CombatInstance RegularAttack(ICombatCapable attacker, ICombatCapable defender){
 
 
-			CombatInstance currentAttack;
+			CombatInstance currentAttack = new CombatInstance();
 			int damageToInflict=0;
 
 			/*
@@ -24,7 +23,7 @@ namespace Combat
 				(1.0D - attacker.StrikeChance) - levelDifferenceModifier;
 
 			//Damage to inflict will be progressively reduced
-			currentAttack.BaseDamage = attacker.AttackDamage();
+			currentAttack.BaseDamage = attacker.CalculateDamage();
 			damageToInflict =  currentAttack.BaseDamage;
 
 			//Roll for attack

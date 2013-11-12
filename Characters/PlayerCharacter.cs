@@ -20,7 +20,7 @@ namespace Characters
 		public int Charisma{ get; set; }
 		public int Experience{ get; set; }
 		//Inventory
-		public Inventory Backpack{ get;}
+		public Inventory Backpack{ get;private set;}
 
 		//Currently Equipped
 		public List<Item> EquippedItems=new List<Item>();

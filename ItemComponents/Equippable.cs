@@ -4,9 +4,9 @@ using Constants;
 
 namespace ItemComponents
 {
-	public class Equippable
+	public class Equippable : IItemComponent
 	{	
-		public int EquipmentSlot{ get; }
+		public int EquipmentSlot{ get; private set;}
 		public Equippable(int itemSlot){
 			EquipmentSlot=itemSlot;
 		}

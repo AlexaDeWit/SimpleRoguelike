@@ -3,10 +3,10 @@ using Characters;
 
 namespace ItemComponents
 {
-	public class IGrantsEffect
+	public interface IGrantsEffect : IItemComponent
 	{
-		void OnApplication(Character affected);
-		void OnRemoval(Character affected);
+		void ApplyEffect(Character affected);
+		void RemoveEffect(Character affected);
 	}
 }
 
