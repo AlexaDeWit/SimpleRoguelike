@@ -1,27 +1,24 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Characters/PlayerCharacter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Combat/CombatSystem.cs">
     <Files>
-      <File FileName="ItemComponents/ContributesDamage.cs" Line="36" Column="24" />
-      <File FileName="BaseClasses/DiceRoll.cs" Line="22" Column="4" />
-      <File FileName="Combat/CombatSystem.cs" Line="2" Column="17" />
-      <File FileName="BaseClasses/Entity.cs" Line="1" Column="1" />
-      <File FileName="Characters/Character.cs" Line="47" Column="23" />
-      <File FileName="Combat/ICombatCapable.cs" Line="17" Column="24" />
-      <File FileName="Constants/Mechanics.cs" Line="11" Column="40" />
-      <File FileName="Constants/CombatConst.cs" Line="4" Column="2" />
-      <File FileName="Characters/Diet.cs" Line="4" Column="21" />
-      <File FileName="Characters/PlayerCharacter.cs" Line="23" Column="34" />
-      <File FileName="ItemComponents/IEquippable.cs" Line="16" Column="1" />
-      <File FileName="ItemComponents/GrantsArmour.cs" Line="16" Column="45" />
-      <File FileName="ItemComponents/IItemComponent.cs" Line="1" Column="1" />
-      <File FileName="ItemComponents/IGrantsEffect.cs" Line="10" Column="3" />
-      <File FileName="Characters/NonPlayerCharacter.cs" Line="1" Column="1" />
-      <File FileName="Items/Item.cs" Line="16" Column="26" />
-      <File FileName="ItemComponents/HasMass.cs" Line="14" Column="1" />
-      <File FileName="ItemComponents/CanBlockAttacks.cs" Line="17" Column="1" />
-      <File FileName="Items/Inventory.cs" Line="5" Column="20" />
-      <File FileName="Items/ItemSystem.cs" Line="7" Column="3" />
+      <File FileName="Items/ItemSystem.cs" Line="22" Column="61" />
+      <File FileName="ItemComponents/HasMass.cs" Line="7" Column="39" />
+      <File FileName="ItemComponents/CanBlockAttacks.cs" Line="8" Column="43" />
+      <File FileName="ItemComponents/GrantsArmour.cs" Line="15" Column="27" />
+      <File FileName="ItemComponents/Equippable.cs" Line="9" Column="46" />
+      <File FileName="ItemComponents/IGrantsEffect.cs" Line="9" Column="20" />
+      <File FileName="ItemComponents/ContributesDamage.cs" Line="36" Column="27" />
+      <File FileName="Game/Game.cs" Line="9" Column="34" />
+      <File FileName="Level/Tile.cs" Line="70" Column="14" />
+      <File FileName="Combat/CombatInstance.cs" Line="17" Column="28" />
+      <File FileName="Level/LevelTransition.cs" Line="11" Column="4" />
+      <File FileName="BaseClasses/Entity.cs" Line="8" Column="18" />
+      <File FileName="Characters/Faction.cs" Line="8" Column="45" />
+      <File FileName="Characters/NonPlayerCharacter.cs" Line="21" Column="25" />
+      <File FileName="Characters/PlayerCharacter.cs" Line="23" Column="46" />
+      <File FileName="BaseClasses/DiceRoll.cs" Line="8" Column="42" />
+      <File FileName="Combat/CombatSystem.cs" Line="66" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

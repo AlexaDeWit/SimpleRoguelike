@@ -25,6 +25,7 @@ namespace Items
 			if (Components.OfType<T> ().Count () > 0) {
 				return true;
 			}
+			return false;
 		}
 	}
 }

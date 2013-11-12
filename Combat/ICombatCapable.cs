@@ -18,8 +18,6 @@ namespace Combat
 
 		//functions
 		int CalculateDamage();
-
-		double DamageReductionPercentage();
 		double SuccessRoll();
 		int SufferDamage(int damage);
 	}

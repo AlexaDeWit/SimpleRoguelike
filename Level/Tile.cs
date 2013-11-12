@@ -6,13 +6,13 @@ namespace Level
 {
 	public class Tile : Entity
 	{
-		private Tile[,] _tiles;
+		private Tile[][] _tiles;
 		private int _x;
 		private int _y;
 		public TileType TileStyle;
 		public List<Entity> Contents{ get; private set;}
 
-		public Tile (int x, int y, Tile[,] tiles, TileType type){
+		public Tile (int x, int y, Tile[][] tiles, TileType type){
 			_x = x;
 			_y = y;
 			_tiles = tiles;

@@ -1,12 +1,14 @@
 using System;
+using System.Collections.Generic;
+using ItemComponents;
 
 namespace Items
 {
 	public class Food : Item
 	{
-		//name and description are inherited properties
-		public int Filling;
-
+		public Food(List<IItemComponent> components){
+			Components=components;
+		}
 	}
 }
 

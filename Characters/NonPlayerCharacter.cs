@@ -9,6 +9,7 @@ namespace Characters
 		//Combat Stats
 		//And Combat Interface implementation, from Character class inheritence
 		public override int ArmourValue{get;set;}
+		public override bool CanBlock{ get; set; }
 		public override double BlockChance{ get;set; }
 		public override int BlockAmount{ get;set; }
 		public override double StrikeChance{ get; set;}
@@ -20,6 +21,10 @@ namespace Characters
 			set {
 				CombatLevel = value;
 			}
+		}
+		//Not implemented yet
+		public override int SufferDamage(int damage){
+			return 0;
 		}
 		
 	}

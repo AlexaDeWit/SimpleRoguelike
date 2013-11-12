@@ -63,7 +63,7 @@ namespace Combat
 			//the 1 represents the adjustment from a percentage of reduction
 			//to a ratio for multiplication
 			//IE. -30% damage taken is damage*70%
-			return baseDamage * (ArmourDamageRatio(armour)+1);
+			return (int)(baseDamage * (ArmourDamageRatio(armour)+1));
 		}
 		//returns the percentage of damage to be reduced or amplified
 		public static double ArmourDamageRatio (int armour)

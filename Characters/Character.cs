@@ -46,6 +46,7 @@ namespace Characters
 			foreach (DiceRoll d in DamageComponents) {
 				total += d.Roll();
 			}
+			return total;
 		}
 
 		//Percentage Chance
@@ -55,6 +56,7 @@ namespace Characters
 			return numberGenerator.NextDouble();
 		}
 		//Allow a character to attack another
+		public abstract int SufferDamage(int damage);
        	
 	}
 
