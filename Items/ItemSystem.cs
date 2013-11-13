@@ -4,6 +4,7 @@ using Characters;
 using System.Linq;
 using Constants;
 using System.Collections.Generic;
+using Enums;
 
 namespace Items
 {
@@ -14,26 +15,30 @@ namespace Items
 			if (item.Supports<Equippable> ()) {
 				ApplyEffects(item,character);
 				character.EquippedItems.Add(item);
+				return true;
 			}
+			return false;
 		}
 		public static bool ApplyEffects (Item item, Character character)
 		{
 			//Am I doing this right?
 			//Components is a List of Type IItemComponent from which IGrantsEffect is inherited
-			List<IGrantsEffect> effects = item.Components.OfType<IGrantsEffect>().All();
+			List<IGrantsEffect> effects = item.Components.OfType<IGrantsEffect>().ToList();
 			foreach (IGrantsEffect effect in effects) {
 				effect.ApplyEffect(character);
 			}
+			return true;
 		}
 		public static bool RemoveEffects(Item item, Character character){
+			return true;
 		}
-		public static int ItemSlot<T> (Item item) where T: Equippable
+		public static ItemEnums.ITEM_SLOT ItemSlot<T> (Item item) where T: Equippable
 		{
 			T component = item.Components.OfType<T> ().FirstOrDefault ();
 			if (component != null) {
 				return component.EquipmentSlot;
 			} else {
-				return ITEM_SLOT.NONE;
+				return ItemEnums.ITEM_SLOT.NONE;
 			}
 		}
 		public static void UnequipItem(Item item, PlayerCharacter character){

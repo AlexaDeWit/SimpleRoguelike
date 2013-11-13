@@ -2,7 +2,6 @@ using System;
 
 namespace Constants
 {
-	public enum ITEM_SLOT{NONE,HELMET,CHEST,GLOVES,PANTS,BOOTS, WEAPON, SHIELD, NECK, RING_ONE, RING_TWO};
 	public static class Mechanics
 	{
 		public const int REPUTATION_MINIMUM_FRIENDLY=100;

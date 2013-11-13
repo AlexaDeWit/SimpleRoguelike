@@ -13,7 +13,7 @@ namespace BaseClasses
 		}
 		public int Roll ()
 		{
-			int total;
+			int total=0;
 			Random rand = new Random ();
 			for (int i=0; i< this.DiceCount; i++) {
 				total += 1 + rand.Next(DiceSize);

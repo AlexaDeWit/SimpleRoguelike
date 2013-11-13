@@ -12,14 +12,11 @@ namespace Characters
 		public override bool CanBlock{ get; set; }
 		public override double BlockChance{ get;set; }
 		public override int BlockAmount{ get;set; }
-		public override double StrikeChance{ get; set;}
-		public override double EvasionChance{ get; set;}
+		public override double StrikeChance{ get { return StrikeChance; } }
+		public override double EvasionChance{ get { return EvasionChance; }}
 		public override int CombatLevel { 
 			get {
 				return Level;
-			}
-			set {
-				CombatLevel = value;
 			}
 		}
 		//Not implemented yet

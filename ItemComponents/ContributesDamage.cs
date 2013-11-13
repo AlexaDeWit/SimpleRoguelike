@@ -31,10 +31,10 @@ namespace ItemComponents
 
 		//Interface implementation
 		public void ApplyEffect(Character owner){
-			owner.DamageComponents.Add(this);
+			owner.DamageComponents.Add(this._diceDamage);
 		}
 		public void RemoveEffect(Character owner){
-			owner.DamageComponents.Remove(this);
+			owner.DamageComponents.Remove(this._diceDamage);
 		}
 	}
 }

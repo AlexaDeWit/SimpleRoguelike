@@ -24,9 +24,49 @@ namespace Characters
 
 		//Currently Equipped
 		public List<Item> EquippedItems=new List<Item>();
+
+		public int DamageIgnore{ get; set; }
+
 		//Derived Attributes
 		public override int ArmourValue {set;get;}
+		public override double BlockChance{ set; get; }
+		public override int BlockAmount{ set; get; }
+		public override bool CanBlock { set; get; }
+		public override int CombatLevel {
+			get {
+				return Level;
+			}
+		}
 
+		public override double StrikeChance {
+			get {
+				double bonusHitChance=0;
+				bonusHitChance = (this.Agility / 
+				                  (this.Agility + CombatConst.AGILITY_BONUS_RATIO_HIT))
+									*CombatConst.STRIKE_CHANCE_SCALING_RATIO;
+				return CombatConst.BASE_HIT_CHANCE + bonusHitChance;
+			}
+		}
+		public override double EvasionChance {
+			get {
+				double bonusEvadeChance=0;
+				bonusEvadeChance = (this.Agility /
+				                    (this.Agility + CombatConst.AGILITY_BONUS_RATIO_HIT))
+									*CombatConst.STRIKE_CHANCE_SCALING_RATIO;
+				return CombatConst.BASE_EVASION_CHANCE + bonusEvadeChance;
+			}
+		}
+		public override int SufferDamage (int damage)
+		{
+			int damageToSuffer = damage - DamageIgnore;
+			if (damageToSuffer > 0) {
+				Health -= damageToSuffer;
+				return damageToSuffer;
+			} else {
+				return 0;
+			}
+		}
 	}
+
 }
 

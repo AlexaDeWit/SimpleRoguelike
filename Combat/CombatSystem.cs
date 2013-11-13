@@ -36,7 +36,6 @@ namespace Combat
 					//Roll to beat defender's block chance
 					currentAttack.BypassBlockRoll = attacker.SuccessRoll();
 					if(currentAttack.BypassBlockRoll < defender.BlockChance){
-						//Attack was blocked
 						currentAttack.WasBlocked = true;
 						currentAttack.DamageBlocked = defender.BlockAmount;
 						damageToInflict -= currentAttack.DamageBlocked;

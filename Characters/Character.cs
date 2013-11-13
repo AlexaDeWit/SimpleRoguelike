@@ -35,9 +35,9 @@ namespace Characters
 		public abstract int ArmourValue{get;set;}
 		public abstract double BlockChance{ get;set; }
 		public abstract int BlockAmount{ get;set; }
-		public abstract double StrikeChance{ get; set;}
-		public abstract double EvasionChance{ get; set;}
-		public abstract int CombatLevel{ get; set;}
+		public abstract double StrikeChance{ get; }
+		public abstract double EvasionChance{ get;}
+		public abstract int CombatLevel{ get;}
 		public abstract bool CanBlock{ get; set; }
 		//DamageCalculation
 		public int CalculateDamage ()

@@ -6,8 +6,7 @@ namespace Items
 {
 	public class Food : Item
 	{
-		public Food(List<IItemComponent> components){
-			Components=components;
+		public Food(List<IItemComponent> components) : base(components){
 		}
 	}
 }

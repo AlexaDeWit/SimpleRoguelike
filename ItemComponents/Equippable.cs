@@ -1,13 +1,13 @@
 using System;
 using BaseClasses;
-using Constants;
+using Enums;
 
 namespace ItemComponents
 {
 	public class Equippable : IItemComponent
 	{	
-		public int EquipmentSlot{ get; private set;}
-		public Equippable(int itemSlot){
+		public ItemEnums.ITEM_SLOT EquipmentSlot{ get; private set;}
+		public Equippable(ItemEnums.ITEM_SLOT itemSlot){
 			EquipmentSlot=itemSlot;
 		}
 	}

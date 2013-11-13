@@ -15,6 +15,7 @@ namespace Items
 		public Item(List<IItemComponent> components){
 			Components=components;
 		}
+		//implicit super constructors are sly devils.
 		public T Component<T> () where T : IItemComponent
 		{
 			return Components.OfType<T>().FirstOrDefault();
