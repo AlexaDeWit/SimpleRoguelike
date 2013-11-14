@@ -5,6 +5,13 @@ using BaseClasses;
 
 namespace Characters
 {
+	/*
+	 * <summary>
+	 * This is the base and abstracted character class used to derive both player-characters and nonplayer characters,
+	 * such that they can have shared functionality and be treated as the same thing externally, but allow them both
+	 * to have different systems for deriving things like attack damage
+	 * </summary>
+	 */
 	public abstract class Character : BaseClasses.Entity, Combat.ICombatCapable
 	{
 		//Character Stats

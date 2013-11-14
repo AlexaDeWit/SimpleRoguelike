@@ -2,6 +2,11 @@ using System;
 
 namespace Enums
 {
+	/*
+	 * <summary>
+	 * Enums that correspond to various aspects of an item.
+	 * </summary>
+	 */
 	public static class ItemEnums
 	{
 		public enum ITEM_SLOT{

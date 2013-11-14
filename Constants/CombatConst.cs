@@ -2,6 +2,11 @@ using System;
 
 namespace Constants
 {
+	/*
+	 * <summary>
+	 * Constants that are used and depended on by the combat system and related classes.
+	 * </summary>
+	 */
 	public static class CombatConst
 	{
 		public const double BASE_HIT_CHANCE = 0.65D;

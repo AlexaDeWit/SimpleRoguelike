@@ -2,6 +2,11 @@ using System;
 
 namespace Combat
 {
+	/*
+	 * <summary>
+	 * Stores one instance of combat for use in both combat logging, as for outputting the results of combat.
+	 * </summary>
+	 */
 	public class CombatInstance
 	{
 		public int BaseDamage=0;

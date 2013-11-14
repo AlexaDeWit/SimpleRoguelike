@@ -5,6 +5,13 @@ using Constants;
 
 namespace Combat
 {
+	/*
+	 * <summary>
+	 * Provides all the necessary functions to handle combat between characters and other entities,
+	 * and depends on primarily the ICombatCapable interface being implemented on an entity that is to
+	 * engage in combat.
+	 * </summary>
+	 */
 	public static class CombatSystem
 	{
 		//Allows an attacker to make one attack against a defender using the regular attack system

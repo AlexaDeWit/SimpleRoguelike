@@ -2,6 +2,12 @@ using System;
 
 namespace BaseClasses
 {
+	/*<summary>
+	 * This class represents a dice-based randomization for the game.
+	 * The number of faces on the dice to be rolled, and how many times to roll it.
+	 * A la DND style rolls.
+	 * </summary>
+	 * */
 	public class DiceRoll
 	{
 		public int DiceSize{ get; private set;}

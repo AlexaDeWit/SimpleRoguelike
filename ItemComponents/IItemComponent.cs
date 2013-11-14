@@ -2,7 +2,11 @@ using System;
 
 namespace ItemComponents
 {
-	//Only exists to give a "bottom level" for components to be grouped together in lists
+	/*
+	 * <summary>
+	 *  Exists to give a "bottom level" for components to be grouped together in lists
+	 * </summary>
+	 */
 	public interface IItemComponent
 	{
 	}

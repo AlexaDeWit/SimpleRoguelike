@@ -3,7 +3,14 @@ using System;
 namespace Characters
 {
 	
-	
+	/*
+	 * <summary>
+	 * Nonplayer characters function like player characters but with much simpler mechanics.
+	 * A goblin doesn't need to have complex calculations for its damage based on its equipment...
+	 * 
+	 * It simply has a static damage component of its own.
+	 * </summary>
+	 */
 	public class NonPlayerCharacter : Character
 	{	
 		//Combat Stats

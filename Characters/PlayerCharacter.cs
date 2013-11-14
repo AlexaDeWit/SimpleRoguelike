@@ -9,6 +9,13 @@ using ItemComponents;
 
 namespace Characters
 {
+	/*
+	 * <summary>
+	 * The playercharacter class. It has a large number of attributes, as well as 
+	 * an inventory, list of equipped items, and all the calculations necessary to allow
+	 * the player to engage in combat, using the ICombatCapable interface
+	 * </summary>
+	 */
 	public class PlayerCharacter : Character
 	{
 		//Player Specific Attributes
