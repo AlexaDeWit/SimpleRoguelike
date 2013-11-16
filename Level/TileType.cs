@@ -3,6 +3,12 @@ using BaseClasses;
 
 namespace Level
 {
+	/*
+	 * <summary>
+	 * Defines the type for a given tile, providing its name, description, and information about
+	 * whether it is pathable or not.
+	 * </summary>
+	 */
 	public class TileType : Entity
 	{
 		public bool IsPathable{ get;private set; }

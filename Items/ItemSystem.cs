@@ -8,6 +8,12 @@ using Enums;
 
 namespace Items
 {
+	/*
+	 * <summary>
+	 * This is the item system which handles Item-related actions, such as
+	 * equipping, unequipping, and picking up items.
+	 * </summary>
+	 */
 	public static class ItemSystem
 	{
 		public static bool EquipItem (Item item, PlayerCharacter character)

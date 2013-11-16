@@ -1,5 +1,4 @@
 using System;
-using Equipment;
 using BaseClasses;
 using Constants;
 using System.Collections.Generic;
@@ -27,7 +26,7 @@ namespace Characters
 		public int Charisma{ get; set; }
 		public int Experience{ get; set; }
 		//Inventory
-		public Inventory Backpack{ get;private set;}
+		public List<Item> Backpack = new List<Item> ();
 
 		//Currently Equipped
 		public List<Item> EquippedItems=new List<Item>();

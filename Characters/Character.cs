@@ -1,5 +1,4 @@
 using System;
-using Equipment;
 using System.Collections.Generic;
 using BaseClasses;
 

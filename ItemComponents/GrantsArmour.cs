@@ -3,6 +3,11 @@ using Characters;
 
 namespace ItemComponents
 {
+	/*
+	 * <summary>
+	 * Allows an item to contribute to its wielder's total armour
+	 * </summary>
+	 */
 	public class GrantsArmour : IGrantsEffect
 	{
 		private int ArmourValue;

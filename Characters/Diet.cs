@@ -10,7 +10,7 @@ namespace Characters
 	 */
 	public class Diet
 	{
-		List<Items.Food> EdibleFoods;
+		public List<Items.Food> EdibleFoods{ get; private set; }
 		public Diet (List<Items.Food> foods)
 		{
 			EdibleFoods=foods;

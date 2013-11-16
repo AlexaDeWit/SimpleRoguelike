@@ -5,7 +5,12 @@ using ItemComponents;
 
 namespace Items
 {
-
+	/*
+	 * <summary>
+	 * The item class. This uses a component system whereby all characteristics
+	 * of an item are defined by its components, and managed by an axternal system.
+	 * </summary>
+	 */
 	public class Item : BaseClasses.Entity
 	{
 		//The behaviour of this item is entirely defined

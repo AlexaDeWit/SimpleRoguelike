@@ -1,40 +1,31 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Characters/Character.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Combat/CombatInstance.cs">
     <Files>
-      <File FileName="Items/ItemSystem.cs" Line="38" Column="28" />
-      <File FileName="ItemComponents/HasMass.cs" Line="7" Column="39" />
-      <File FileName="ItemComponents/CanBlockAttacks.cs" Line="8" Column="43" />
-      <File FileName="ItemComponents/GrantsArmour.cs" Line="15" Column="27" />
-      <File FileName="ItemComponents/Equippable.cs" Line="3" Column="13" />
-      <File FileName="ItemComponents/IGrantsEffect.cs" Line="9" Column="20" />
-      <File FileName="ItemComponents/ContributesDamage.cs" Line="37" Column="50" />
-      <File FileName="Game/Game.cs" Line="9" Column="34" />
-      <File FileName="Level/Tile.cs" Line="9" Column="18" />
-      <File FileName="Combat/CombatInstance.cs" Line="17" Column="34" />
-      <File FileName="Level/LevelTransition.cs" Line="11" Column="4" />
-      <File FileName="BaseClasses/Entity.cs" Line="11" Column="1" />
-      <File FileName="Characters/Faction.cs" Line="8" Column="45" />
-      <File FileName="Characters/NonPlayerCharacter.cs" Line="20" Column="5" />
-      <File FileName="Characters/PlayerCharacter.cs" Line="34" Column="23" />
-      <File FileName="BaseClasses/DiceRoll.cs" Line="16" Column="15" />
-      <File FileName="Combat/CombatSystem.cs" Line="38" Column="63" />
-      <File FileName="Characters/Diet.cs" Line="8" Column="28" />
-      <File FileName="Items/Food.cs" Line="9" Column="67" />
-      <File FileName="Items/Inventory.cs" Line="1" Column="1" />
-      <File FileName="Characters/Character.cs" Line="40" Column="40" />
-      <File FileName="Combat/ICombatCapable.cs" Line="20" Column="25" />
-      <File FileName="ItemComponents/IItemComponent.cs" Line="1" Column="1" />
-      <File FileName="Level/Level.cs" Line="1" Column="1" />
-      <File FileName="Constants/Mechanics.cs" Line="4" Column="2" />
-      <File FileName="Constants/CombatConst.cs" Line="12" Column="3" />
-      <File FileName="Enums/Items.cs" Line="4" Column="2" />
-      <File FileName="Items/Item.cs" Line="18" Column="48" />
+      <File FileName="Combat/CombatInstance.cs" Line="9" Column="5" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="SimpleRoguelike" expanded="True">
+            <Node name="Combat" expanded="True" />
+            <Node name="Constants" selected="True" />
+            <Node name="ItemComponents" expanded="True" />
+            <Node name="Items" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/alexa/Dropbox/Projects/SimpleRoguelike/Level/Tile.cs" line="35" />
+      <Breakpoint file="/home/alexa/Dropbox/Projects/SimpleRoguelike/Level/Tile.cs" line="35" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
