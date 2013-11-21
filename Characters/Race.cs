@@ -9,6 +9,8 @@ namespace Characters
 	 */
 	public class Race
 	{
+		public string Name;
+		public string Description;
 		public int BaseStrenth{ get;private set; }
 		public int BaseAgility{ get;private set; }
 		public int BaseEndurance{ get;private set; }

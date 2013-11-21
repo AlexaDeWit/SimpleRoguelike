@@ -9,8 +9,10 @@ namespace Level
 	 * whether it is pathable or not.
 	 * </summary>
 	 */
-	public class TileType : Entity
+	public class TileType
 	{
+		public string Name;
+		public string Description;
 		public bool IsPathable{ get;private set; }
 		public bool IsDestructable{ get;private set;}
 

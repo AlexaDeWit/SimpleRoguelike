@@ -12,8 +12,10 @@ namespace Level
 	 * end must be passed a level object to "know where they are"
 	 * </summary>
 	 */
-	public class Level : Entity
+	public class Level
 	{
+		public string Name;
+		public string Description;
 		public Tile[][] Tiles;
 		public Level(int levelWidth,int levelHeight){
 			Tiles= new Tile[levelWidth][];
