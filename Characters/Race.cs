@@ -14,15 +14,13 @@ namespace Characters
 		public int BaseEndurance{ get;private set; }
 		public int BaseIntelligence{ get;private set; }
 		public int BaseCharisma{ get;private set; }
-		public Diet EdibleFoods;
 
-		public Race(int strength, int agility, int endurance, int intelligence, int charisma, Diet diet){
+		public Race(int strength, int agility, int endurance, int intelligence, int charisma){
 			BaseStrenth=strength;
 			BaseAgility=agility;
 			BaseEndurance=endurance;
 			BaseIntelligence=intelligence;
 			BaseCharisma=charisma;
-			EdibleFoods = diet;
 		}
 
 	}

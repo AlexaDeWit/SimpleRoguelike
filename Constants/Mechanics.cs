@@ -14,6 +14,8 @@ namespace Constants
 		public const int REPUTATION_MINIMUM_NEUTRAL=0;
 		public const int REPUTATION_MAXIMUM_HOSTILE=-1;
 		public const string MASS_UNIT = "kg";
+		public const int HEALTH_PER_ENDURANCE = 12;
+		public const int MANA_PER_INTELLIGENCE =15;
 	}
 }
 

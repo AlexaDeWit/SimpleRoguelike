@@ -4,7 +4,7 @@ using Constants;
 using System.Collections.Generic;
 using Items;
 using ItemComponents;
-
+using Level;
 
 namespace Characters
 {
@@ -43,6 +43,24 @@ namespace Characters
 				return Level;
 			}
 		}
+		public Tile PresentLocation{ get; set; }
+
+		public PlayerCharacter(string name, string description, Race race){
+			Name = name;
+			Description = description;
+			CharacterRace = race;
+			Hunger = 0;
+			Strength = race.BaseStrenth;
+			Intelligence = race.BaseIntelligence;
+			Agility = race.BaseAgility;
+			Charisma = race.BaseCharisma;
+			Endurance = race.BaseEndurance;
+
+			MaxHealth = Endurance * Constants.Mechanics.HEALTH_PER_ENDURANCE;
+			Health = MaxHealth;
+			MaxMana = Endurance * Constants.Mechanics.MANA_PER_INTELLIGENCE;
+			Mana = MaxMana;
+		}
 
 		public override double StrikeChance {
 			get {
@@ -57,7 +75,7 @@ namespace Characters
 			get {
 				double bonusEvadeChance=0;
 				bonusEvadeChance = (this.Agility /
-				                    (this.Agility + CombatConst.AGILITY_BONUS_RATIO_HIT))
+				                    (this.Agility + CombatConst.AGILITY_BONUS_RATIO_EVADE))
 									*CombatConst.STRIKE_CHANCE_SCALING_RATIO;
 				return CombatConst.BASE_EVASION_CHANCE + bonusEvadeChance;
 			}

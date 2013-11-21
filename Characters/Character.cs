@@ -15,8 +15,10 @@ namespace Characters
 	{
 		//Character Stats
 		public Race CharacterRace{ get; set; } 
+		public int MaxHealth{ get; set; } 
 		public int Health{ get; set; } 
 		public int HealthRegen{ get; set; }
+		public int MaxMana{ get; set; }
 		public int Mana{ get; set; }
 		public int ManaRegen{ get; set; }
 		public int Level{get;set;}

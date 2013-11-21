@@ -15,6 +15,7 @@ namespace Constants
 		public const double ARMOUR_SCALING_RATIO = 150.0D;
 		public const double STRIKE_CHANCE_SCALING_RATIO = 0.35D;
 		public const double AGILITY_BONUS_RATIO_HIT = 10.0D;
+		public const double AGILITY_BONUS_RATIO_EVADE = 10.0D;
 	}
 }
 
