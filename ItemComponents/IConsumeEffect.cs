@@ -3,10 +3,8 @@ using Characters;
 
 namespace ItemComponents
 {
-	public interface IConsumeable
+	public interface IConsumeEffect : IItemComponent
 	{
-		int MaxCharges{ get;}
-		int ChargesRemaining{ get;}
 		void ApplyEffect(PlayerCharacter affected);
 		void RemoveEffect(PlayerCharacter affected);
 	}

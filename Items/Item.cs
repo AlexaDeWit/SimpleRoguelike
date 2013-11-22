@@ -18,14 +18,15 @@ namespace Items
 		//The behaviour of this item is entirely defined
 		//By what components it is given
 		public List<IItemComponent> Components;
+		public bool DeleteFlag{ get; private set; }
 		//Get me the component requested by type
 		public Item(List<IItemComponent> components){
 			Components=components;
 		}
 		//implicit super constructors are sly devils.
-		public T Component<T> () where T : IItemComponent
+		public List<T> ComponentsOfType<T> () where T : IItemComponent
 		{
-			return Components.OfType<T>().FirstOrDefault();
+			return Components.OfType<T>().ToList();
 		}
 		//Does this Item support this component's features:
 		public bool Supports<T> () where T:IItemComponent
@@ -35,9 +36,15 @@ namespace Items
 			}
 			return false;
 		}
+		public void Update(){
+			foreach (IDestructible destroyFlag in this.ComponentsOfType<IDestructible>()) {
+				if (destroyFlag.DestroyConditionMet) {
+					this.DeleteFlag = true;
+				}
+			}
+		}
 
-
-		public static bool Equip (PlayerCharacter character)
+		public bool EquipTo (PlayerCharacter character)
 		{
 			if (this.Supports<Equippable> ()) {
 				this.ApplyEffects(character);
@@ -46,7 +53,7 @@ namespace Items
 			}
 			return false;
 		}
-		public static bool ApplyEffects (Character character)
+		public bool ApplyEffects (Character character)
 		{
 			//Am I doing this right?
 			//Components is a List of Type IItemComponent from which IGrantsEffect is inherited
@@ -56,14 +63,14 @@ namespace Items
 			}
 			return true;
 		}
-		public static bool RemoveEffects(Character character){
+		public bool RemoveEffects(Character character){
 			List<IGrantsEffect> effects = this.Components.OfType<IGrantsEffect>().ToList();
 			foreach (IGrantsEffect effect in effects) {
 				effect.RemoveEffect(character);
 			}
 			return true;
 		}
-		public static ItemEnums.ITEM_SLOT ItemSlot<T>() where T: Equippable
+		public ItemEnums.ITEM_SLOT ItemSlot<T>() where T: Equippable
 		{
 			T component = this.Components.OfType<T> ().FirstOrDefault ();
 			if (component != null) {
@@ -72,7 +79,7 @@ namespace Items
 				return ItemEnums.ITEM_SLOT.NONE;
 			}
 		}
-		public static void UnequipItem(PlayerCharacter character){
+		public void UnequipFrom(PlayerCharacter character){
 			this.RemoveEffects(character);
 			character.EquippedItems.Remove(this);
 		}

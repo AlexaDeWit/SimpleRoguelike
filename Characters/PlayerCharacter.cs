@@ -89,6 +89,25 @@ namespace Characters
 				return 0;
 			}
 		}
+
+		//Consume an item, may be charge based
+		public bool Consume(Item consumeable){
+
+			if (consumeable.Supports<IConsumeEffect> ()) {
+				//Allows for multiple consume effects
+				foreach (IConsumeEffect effect in consumeable.ComponentsOfType<IConsumeEffect>()) {
+					effect.ApplyEffect (this);
+				}
+				//Update the item so it can determine if it is fully consumed
+				consumeable.Update ();
+				//First condition exists to allow for items the player doesn't have to be consumed
+				if(this.Backpack.Contains(consumeable) && consumeable.DeleteFlag){
+					this.Backpack.Remove (consumeable);
+				}
+				return true;
+			}
+			return false;
+		}
 	}
 
 }

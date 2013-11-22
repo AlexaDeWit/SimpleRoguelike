@@ -4,6 +4,7 @@ using BaseClasses;
 using Combat;
 using Constants;
 
+
 namespace Characters
 {
 	/*
@@ -136,6 +137,7 @@ namespace Characters
 				return damageRatio;
 			}
 		}
+
        	
 	}
 
