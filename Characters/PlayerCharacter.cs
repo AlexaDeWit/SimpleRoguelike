@@ -43,7 +43,6 @@ namespace Characters
 				return Level;
 			}
 		}
-		public Tile PresentLocation{ get; set; }
 
 		public PlayerCharacter(string name, string description, Race race){
 			Name = name;

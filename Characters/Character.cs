@@ -65,6 +65,8 @@ namespace Characters
 		}
 		//Allow a character to attack another
 		public abstract int SufferDamage(int damage);
+
+
        	
 	}
 

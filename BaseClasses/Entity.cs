@@ -16,6 +16,18 @@ namespace BaseClasses
 	{
 		public virtual string Name{get;set;}
 		public virtual string Description{get;set;}
+
+
+		public virtual void Move(Level.Tile destination){
+			destination.Contents.Add (this);
+			PresentLocation.Contents.Remove (this);
+			PresentLocation = destination;
+		}
+		/*note to self, learn pathfinding*/
+		public virtual void MoveToward(Level.Tile destination){
+			//pathfinding logic here
+		}
+		public Level.Tile PresentLocation{ get; set; }
 	}
 }
 

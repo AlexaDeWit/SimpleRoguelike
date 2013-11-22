@@ -10,7 +10,7 @@ namespace Level
 	 * Uses 4 methods to return its adjacent tiles by referencing its containing level
 	 * </summary>
 	 */
-	public class Tile : Entity
+	public class Tile 
 	{
 		private Level _level;
 		private int _x;
