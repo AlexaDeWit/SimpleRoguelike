@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>6</y>
+      <w>138</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+Entity
+--
++Name:string
++Description:string
+--
++Move(destination:Tile)
++MoveToward(destination:Tile)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6</x>
+      <y>0</y>
+      <w>234</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+DiceRoll
+--
++DiceSize:int
++DiceCount:int
+--
+&lt;&lt;Constructor&gt;&gt;DiceRoll(diceSize:int,diceCount:int)
++Roll():int
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>816</x>
+      <y>120</y>
+      <w>96</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>ICombatCapable
+--
+ArmourValue:int
+BlockChance:double
+BlockAmount:int
+StrikeChance:double
+EvasionChance:Double
+CombatLevel:int
+Health:int
+CanBlock:bool
+--
+CalculateDamage():int
+Successroll():int
+SufferDamage():int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>192</y>
+      <w>270</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+/Character/
+--
++CharacterRace:Race
++MaxHealth:int
++Health:int
++MaxMana:int
++Mana:int
++Level:int
+
++DamageComponents:List&lt;DiceRoll&gt;
+		
++Gender:string
+
++FireRes:int
++ColdRes:int
++LightningRes:int
++PoisonRes:int
+
++CharacterFaction:Faction
+
++Currency:long
+
++ArmourValue:int
++BlockChance:double
++BlockAmount:int
++StrikeChance:double
++EvasionChance:Double
++CombatLevel:int
++Health:int
++CanBlock:bool
++DamageIgnore:int
+
+--
+
++CalculateDamage:int
++SuccessRoll():int
++SufferDamage(damage:int):int
++RegularAttack(defender:ICombatCapable):CombatInstance 
++ArmourDamageReduction(baseDamage:int, armour:int):int
++ArmourDamageRatio(armour:int):double
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>636</x>
+      <y>48</y>
+      <w>36</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;18;18;144</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>696</x>
+      <y>114</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>168;18;18;78</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>132</x>
+      <y>306</y>
+      <w>330</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+Faction
+--
++Name:string
++Description:string
++BaseStanding:int
+--
+&lt;&lt;Constructor&gt;&gt;Faction(name:string, description:string, initialStanding:int)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>660</y>
+      <w>114</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+NonPlayerCharacter
+--
++ArmourValue:int
++CanBlock:bool
++BlockChance:double
++BlockAmount:int
++StrikeChance:double
++EvasionChance:Double
++CombatLevel:int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>612</x>
+      <y>534</y>
+      <w>42</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>30;18;18;126</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>522</x>
+      <y>798</y>
+      <w>342</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+PlayerCharacter
+--
++Hunger:int
++Intelligence:int
++Endurance:int
++Agility:int
++Strength:int
++Charisma:int
++Experience:int
+
++Backpack:List&lt;Item&gt;
+
++EquippedItems:List&lt;Item&gt;
+
++ArmourValue:int
++BlockChance:double
++BlockAmount:int
++CanBlock:bool
++CombatLevel:int
+
++StrikeChance:double //Derived
++EvasionChance:double //Derived
+--
+
+&lt;&lt;Constructor&gt;&gt;PlayerCharacter(name:string, description:string, race:Race)
+
++Consume(consumeable:Item):bool
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>684</x>
+      <y>534</y>
+      <w>30</w>
+      <h>276</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;264</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>174</y>
+      <w>210</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+Race
+--
++Name:string
++Description:string
++BaseStrength:int
++BaseAgility:int
++BaseEndurance:int
++BaseIntelligence:int
++BaseCharisma:int
+--
+&lt;&lt;constructor&gt;&gt;Race(strength:int, agility:int,
+endurance:int, intelligence:int, charisma:int)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>444</y>
+      <w>138</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+CombatInstance
+--
++BaseDamage:int
++DamageBlocked:int
++DamageReducedByArmour:int
++DamageAbsorbed:int
++DamageInflicted:int
++AttackRoll:double
++BypassBlockRoll:double
++DefenderCanBlock:bool
++WasBlocked:bool
++AttackSuccess:bool
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>156</x>
+      <y>444</y>
+      <w>186</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+&lt;&lt;static&gt;&gt;
+CombatConst
+--
++BASE_HIT_CHANCE:double
++BASE_EVASION_CHANCE :double
++TARGET_MISSED:int
++ARMOUR_SCALING_RATIO:double
++STRIKE_CHANCE_SCALING_RATIO:double
++AGILITY_BONUS_RATIO_HIT:double
++AGILITY_BONUS_RATIO_EVADE:double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>78</y>
+      <w>174</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+&lt;&lt;static&gt;&gt;
+Mechanics
+--
++REPUTATION_MINIMUM_FRIENDLY:int
++REPUTATION_MINIMUM_NEUTRAL:int
++REPUTATION_MAXIMUM_HOSTILE:int
++MASS_UNIT:string
++HEALTH_PER_ENDURANCE:int
++MANA_PER_INTELLIGENCE:int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1098</x>
+      <y>18</y>
+      <w>90</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+&lt;&lt;Enumeration&gt;&gt;
+ITEM_SLOT
+--
+NONE
+HELMET
+CHEST
+GLOVES
+PANTS
+BOOTS
+WEAPON
+SHIELD
+NECK
+RING
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>876</x>
+      <y>894</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+CanBlockAttacks
+--
++BlockChance:double
++BlockAmount:int
+--
+&lt;&lt;Constructor&gt;&gt;CanBlockAttacks
+	(chance:double, amount:int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>1038</x>
+      <y>714</y>
+      <w>108</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>IItemComponent
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>1284</x>
+      <y>642</y>
+      <w>144</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>IGrantsEffect
+--
+ApplyEffect(affected: Character)
+RemoveEffect(affected: Character)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>960</x>
+      <y>696</y>
+      <w>144</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>132;18;18;198</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>1278</x>
+      <y>744</y>
+      <w>180</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>IConsumeEffect
+--
+ApplyEffect(affected: PlayerCharacter)
+RemoveEffect(affected: PlayerCharacter)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1080</x>
+      <y>702</y>
+      <w>294</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;282;48</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Interface</type>
+    <coordinates>
+      <x>1326</x>
+      <y>816</y>
+      <w>108</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>IDestructble
+--
+DestroyConditionMet:bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1068</x>
+      <y>636</y>
+      <w>300</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;84;288;18</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1164</x>
+      <y>426</y>
+      <w>168</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+ContributesDamage
+--
+-_diceDamage:DiceRoll
++DiceSize:int
++DiceCount:int
+--
+&lt;&lt;Constructor&gt;&gt;ConstributesDamage
+	(diceSize:int, diceCount:int)
+&lt;&lt;Constructor&gt;&gt;ContributesDamage
+	(dice:DiceRoll)
+
++ApplyEffect(owner:Character)
++RemoveEffect(owner:Character)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1260</x>
+      <y>522</y>
+      <w>102</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90;126;18;18</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1488</x>
+      <y>738</y>
+      <w>186</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+Edible
+--
++Filling:int
++DestroyConditionMet:bool
+--
+&lt;&lt;Constructor&gt;&gt;Edible(filling:int)
+
++ApplyEffect(affected:PlayerCharacter)
++RemoveEffect(affected:PlayerCharacter)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1350</x>
+      <y>738</y>
+      <w>150</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;138;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1362</x>
+      <y>780</y>
+      <w>138</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;48;126;18</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1032</x>
+      <y>912</y>
+      <w>222</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+Equippable
+--
+EquipmentSlot:ITEM_SLOT
+--
+&lt;&lt;constructor&gt;&gt;Equippable(itemSlot:ITEM_SLOT)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1344</x>
+      <y>462</y>
+      <w>198</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+GrantsArmour
+--
+ArmourValue:int
+--
+&lt;&lt;Constructor&gt;&gt;GrantsArmour(armour:int)
+
++ApplyEffect(affected:Character)
++RemoveEffect(affected:Character)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1344</x>
+      <y>516</y>
+      <w>54</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;126;42;18</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1266</x>
+      <y>906</y>
+      <w>174</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+HasMass
+--
+Mass:double
+--
+&lt;&lt;constructor&gt;&gt;HasMass(double:int)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1080</x>
+      <y>702</y>
+      <w>270</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;258;204</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1002</x>
+      <y>144</y>
+      <w>270</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+Item
+--
++Components:List&lt;IItemComponent&gt;
++DeleteFlag:bool
+--
+&lt;&lt;Constructor&gt;&gt;Item(components:List&lt;IItemComponent&gt;)
+
++ComponentsOfType&lt;T&gt;:List&lt;T&gt;
++Supports&lt;T&gt;:bool
+
++Update
+
++EquipTo(character:PlayerCharacter):bool
++UnequipFrom(character:Playercharacter):bool
++ApplyEffects(character:Character):bool
++RemoveEffects(character:Character):bool
+
++ItemSlot&lt;T&gt;:ITEM_SLOT
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>774</y>
+      <w>150</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+Tile
+--
+-_level:Level
+-_x:int
+-_y:int
++TyleStyle:TyleType
++Contents:List&lt;Entity&gt;
+
+--
+&lt;&lt;constructor&gt;&gt;Tile(x:int, y:int, 
+	level:Level, type:TileType)
+
++TileRight:Tile
++TileLeft:Tile
++TileAbove:Tile
++TileBelow:Tile
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>732</x>
+      <y>18</y>
+      <w>282</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;270;126</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>126</x>
+      <y>966</y>
+      <w>234</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+Level
+--
++Name:string
++Description:string
+
++Tiles:Tile[][]
+--
+&lt;&lt;Constructor&gt;&gt;Level(levelWidth:int, levelHeight:int)
+
++setTile(tile:Tile, x:int, y:int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1038</x>
+      <y>288</y>
+      <w>174</w>
+      <h>438</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+r1=Requires a Collection of IItemComponent
+</panel_attributes>
+    <additional_attributes>90;18;54;426</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>900</y>
+      <w>116</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+r1=Contains an array of Tiles
+</panel_attributes>
+    <additional_attributes>60;66;60;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>732</x>
+      <y>288</y>
+      <w>282</w>
+      <h>522</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+r1=Most stats are derived from ItemCollections</panel_attributes>
+    <additional_attributes>96;510;270;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>204</y>
+      <w>176</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+r1=Defines many of the base attributes        </panel_attributes>
+    <additional_attributes>84;18;150;96</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>138</x>
+      <y>648</y>
+      <w>222</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>elementstyle=autoresize
+TileType
+--
++Name:String
++Description:String
++IsPathable:bool
++IsDestructable:bool
+
+--
+&lt;&lt;Constructor&gt;&gt;(name:string, description:string,
+	pathable:bool, destructable:bool)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>174</x>
+      <y>720</y>
+      <w>122</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+r1=Defines aspects of a tile     </panel_attributes>
+    <additional_attributes>54;36;72;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1074</x>
+      <y>708</y>
+      <w>96</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;84;204</additional_attributes>
+  </element>
+</diagram>
