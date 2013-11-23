@@ -1,39 +1,40 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Level/TileType.cs">
     <Files>
-      <File FileName="Game/Game.cs" Line="12" Column="3" />
-      <File FileName="Level/Level.cs" Line="18" Column="29" />
-      <File FileName="Level/Tile.cs" Line="14" Column="3" />
-      <File FileName="Level/TileType.cs" Line="15" Column="29" />
-      <File FileName="Level/LevelTransition.cs" Line="7" Column="22" />
-      <File FileName="Characters/Race.cs" Line="13" Column="29" />
-      <File FileName="Characters/PlayerCharacter.cs" Line="45" Column="4" />
-      <File FileName="Constants/Mechanics.cs" Line="1" Column="1" />
-      <File FileName="Characters/Character.cs" Line="69" Column="1" />
-      <File FileName="Items/Item.cs" Line="63" Column="5" />
-      <File FileName="Constants/CombatConst.cs" Line="1" Column="1" />
-      <File FileName="Items/ItemSystem.cs" Line="19" Column="3" />
-      <File FileName="ItemComponents/IItemComponent.cs" Line="1" Column="1" />
-      <File FileName="ItemComponents/Equippable.cs" Line="1" Column="1" />
-      <File FileName="Characters/Faction.cs" Line="15" Column="29" />
-      <File FileName="Characters/Diet.cs" Line="22" Column="1" />
-      <File FileName="Items/Food.cs" Line="1" Column="1" />
-      <File FileName="Characters/NonPlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="Characters/Character.cs" Line="1" Column="1" />
       <File FileName="Combat/CombatInstance.cs" Line="1" Column="1" />
-      <File FileName="Combat/CombatSystem.cs" Line="89" Column="2" />
+      <File FileName="Combat/ICombatCapable.cs" Line="1" Column="1" />
+      <File FileName="Items/Item.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/ContributesDamage.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/CanBlockAttacks.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/Edible.cs" Line="1" Column="1" />
+      <File FileName="Characters/PlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/IConsumeEffect.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/IItemComponent.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/IDestructible.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/IGrantsEffect.cs" Line="1" Column="1" />
+      <File FileName="BaseClasses/Entity.cs" Line="1" Column="1" />
+      <File FileName="Game/Game.cs" Line="1" Column="1" />
+      <File FileName="Level/LevelRenderer.cs" Line="1" Column="1" />
+      <File FileName="BaseClasses/DiceRoll.cs" Line="1" Column="1" />
+      <File FileName="Characters/Diet.cs" Line="1" Column="1" />
+      <File FileName="Characters/Faction.cs" Line="1" Column="1" />
+      <File FileName="Characters/NonPlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="Characters/Race.cs" Line="1" Column="1" />
+      <File FileName="Constants/CombatConst.cs" Line="1" Column="1" />
+      <File FileName="Constants/Mechanics.cs" Line="1" Column="1" />
       <File FileName="Enums/ItemEnums.cs" Line="1" Column="1" />
-      <File FileName="Level/LevelLoader.cs" Line="1" Column="1" />
-      <File FileName="BaseClasses/Entity.cs" Line="28" Column="28" />
-      <File FileName="ItemComponents/IGrantsEffect.cs" Line="16" Column="1" />
-      <File FileName="ItemComponents/GrantsArmour.cs" Line="17" Column="3" />
-      <File FileName="ItemComponents/Edible.cs" Line="24" Column="34" />
-      <File FileName="ItemComponents/IConsumeable.cs" Line="11" Column="47" />
-      <File FileName="Combat/ICombatCapable.cs" Line="19" Column="26" />
+      <File FileName="ItemComponents/Equippable.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/GrantsArmour.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/HasMass.cs" Line="1" Column="1" />
+      <File FileName="Level/Level.cs" Line="1" Column="1" />
+      <File FileName="Level/Tile.cs" Line="1" Column="1" />
+      <File FileName="Level/TileType.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
           <Node name="SimpleRoguelike" expanded="True">
             <Node name="BaseClasses" expanded="True" />
             <Node name="Characters" expanded="True" />
@@ -43,7 +44,9 @@
             <Node name="Game" expanded="True" />
             <Node name="ItemComponents" expanded="True" />
             <Node name="Items" expanded="True" />
-            <Node name="Level" expanded="True" />
+            <Node name="Level" expanded="True">
+              <Node name="TileType.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

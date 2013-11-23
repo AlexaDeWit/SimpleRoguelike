@@ -53,6 +53,10 @@ namespace Items
 			}
 			return false;
 		}
+		public void UnequipFrom(PlayerCharacter character){
+			this.RemoveEffects(character);
+			character.EquippedItems.Remove(this);
+		}
 		public bool ApplyEffects (Character character)
 		{
 			//Am I doing this right?
@@ -70,19 +74,16 @@ namespace Items
 			}
 			return true;
 		}
-		public ItemEnums.ITEM_SLOT ItemSlot<T>() where T: Equippable
+		public ITEM_SLOT ItemSlot<T>() where T: Equippable
 		{
 			T component = this.Components.OfType<T> ().FirstOrDefault ();
 			if (component != null) {
 				return component.EquipmentSlot;
 			} else {
-				return ItemEnums.ITEM_SLOT.NONE;
+				return ITEM_SLOT.NONE;
 			}
 		}
-		public void UnequipFrom(PlayerCharacter character){
-			this.RemoveEffects(character);
-			character.EquippedItems.Remove(this);
-		}
+
 	}
 }
 

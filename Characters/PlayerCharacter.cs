@@ -31,13 +31,19 @@ namespace Characters
 		//Currently Equipped
 		public List<Item> EquippedItems=new List<Item>();
 
-		public int DamageIgnore{ get; set; }
-
 		//Derived Attributes
 		public override int ArmourValue {set;get;}
 		public override double BlockChance{ set; get; }
 		public override int BlockAmount{ set; get; }
-		public override bool CanBlock { set; get; }
+		public override bool CanBlock { get{
+				foreach (Item i in EquippedItems) {
+					if (i.Supports<CanBlockAttacks> ()) {
+						return true;
+					}
+				}
+				return false;
+			}
+		}
 		public override int CombatLevel {
 			get {
 				return Level;
@@ -77,16 +83,6 @@ namespace Characters
 				                    (this.Agility + CombatConst.AGILITY_BONUS_RATIO_EVADE))
 									*CombatConst.STRIKE_CHANCE_SCALING_RATIO;
 				return CombatConst.BASE_EVASION_CHANCE + bonusEvadeChance;
-			}
-		}
-		public override int SufferDamage (int damage)
-		{
-			int damageToSuffer = damage - DamageIgnore;
-			if (damageToSuffer > 0) {
-				Health -= damageToSuffer;
-				return damageToSuffer;
-			} else {
-				return 0;
 			}
 		}
 

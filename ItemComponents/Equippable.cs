@@ -11,8 +11,8 @@ namespace ItemComponents
 	 */
 	public class Equippable : IItemComponent
 	{	
-		public ItemEnums.ITEM_SLOT EquipmentSlot{ get; private set;}
-		public Equippable(ItemEnums.ITEM_SLOT itemSlot){
+		public ITEM_SLOT EquipmentSlot{ get; private set;}
+		public Equippable(ITEM_SLOT itemSlot){
 			EquipmentSlot=itemSlot;
 		}
 	}

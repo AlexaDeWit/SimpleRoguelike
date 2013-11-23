@@ -20,10 +20,8 @@ namespace Characters
 		public Race CharacterRace{ get; set; } 
 		public int MaxHealth{ get; set; } 
 		public int Health{ get; set; } 
-		public int HealthRegen{ get; set; }
 		public int MaxMana{ get; set; }
 		public int Mana{ get; set; }
-		public int ManaRegen{ get; set; }
 		public int Level{get;set;}
 		//Sum of all attack damage sources
 		public List<DiceRoll> DamageComponents=new List<DiceRoll>();
@@ -49,7 +47,10 @@ namespace Characters
 		public abstract double StrikeChance{ get; }
 		public abstract double EvasionChance{ get;}
 		public abstract int CombatLevel{ get;}
-		public abstract bool CanBlock{ get; set; }
+		public abstract bool CanBlock{ get{ return CanBlock;
+			}
+		}
+		public int DamageIgnore{ get; set; }
 		//DamageCalculation
 		public int CalculateDamage ()
 		{
@@ -67,7 +68,16 @@ namespace Characters
 			return numberGenerator.NextDouble();
 		}
 		//Allow a character to attack another
-		public abstract int SufferDamage(int damage);
+		public virtual int SufferDamage (int damage)
+		{
+			int damageToSuffer = damage - DamageIgnore;
+			if (damageToSuffer > 0) {
+				Health -= damageToSuffer;
+				return damageToSuffer;
+			} else {
+				return 0;
+			}
+		}
 
 		public CombatInstance RegularAttack(ICombatCapable defender){
 

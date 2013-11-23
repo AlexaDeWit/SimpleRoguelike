@@ -21,14 +21,11 @@ namespace Characters
 		public override int BlockAmount{ get;set; }
 		public override double StrikeChance{ get { return StrikeChance; } }
 		public override double EvasionChance{ get { return EvasionChance; }}
+		public override bool CanBloack{ get; set;}
 		public override int CombatLevel { 
 			get {
 				return Level;
 			}
-		}
-		//Not implemented yet
-		public override int SufferDamage(int damage){
-			return 0;
 		}
 		
 	}

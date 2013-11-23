@@ -13,22 +13,17 @@ namespace Level
 	public class Tile 
 	{
 		private Level _level;
-		private int _x;
-		private int _y;
+		public int X{ get; private set; }
+		public int Y{ get; private set; }
 		public TileType TileStyle;
 		public List<Entity> Contents{ get; private set;}
 
 		public Tile (int x, int y,Level level, TileType type){
-			_x = x;
-			_y = y;
+			X = x;
+			Y = y;
 			_level = level;
 			TileStyle = type;
 			Contents = new List<Entity>();
-		}
-		public void MoveEntity (Tile destination, Entity entity)
-		{
-			destination.Contents.Add(entity);
-			this.Contents.Remove(entity);
 		}
 		//These will return the current tile if the adjacent tile is out of the level bounds
 		//Considering changing it to a wrapping level system.
@@ -37,8 +32,8 @@ namespace Level
 				TileRight = value;
 			}
 			get{
-				if(_level.Tiles.GetLength(0) >= this._x){
-					return _level.Tiles[this._x+1][this._y];
+				if(_level.Tiles.GetLength(0) >= this.X){
+					return _level.Tiles[this.X+1][this.Y];
 				}
 				else{
 					return this;
@@ -50,8 +45,8 @@ namespace Level
 				TileLeft = value;
 			}
 			get{
-				if(this._x>0){
-					return _level.Tiles[this._x-1][this._y];
+				if(this.X>0){
+					return _level.Tiles[this.X-1][this.Y];
 				}
 				else{
 					return this;
@@ -63,8 +58,8 @@ namespace Level
 				TileAbove = value;
 			}
 			get{
-				if(this._y > 0){
-					return _level.Tiles[this._x][this._y-1];
+				if(this.Y > 0){
+					return _level.Tiles[this.X][this.Y-1];
 				}
 				else{
 					return this;
@@ -76,8 +71,8 @@ namespace Level
 				TileBelow = value;
 			}
 			get{
-				if(_level.Tiles.GetLength(1) >= this._y){
-					return _level.Tiles[this._x][this._y+1];
+				if(_level.Tiles.GetLength(1) >= this.Y){
+					return _level.Tiles[this.X][this.Y+1];
 				}
 				else{
 					return this;

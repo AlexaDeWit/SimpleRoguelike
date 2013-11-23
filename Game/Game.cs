@@ -29,8 +29,7 @@ namespace Game
 					tempTile = new Tile (x, y, GameMap, grass);
 					GameMap.setTile (tempTile, x, y);
 				}
-			}
-
+			} 
 
 			//Lets define a race for our character to be
 			Race human = new Race (10, 9, 11, 9, 12);
@@ -44,15 +43,9 @@ namespace Game
 
 
 			//Lets try moving her to the right.
-			MoveEntity (myNerd, myNerd.PresentLocation, myNerd.PresentLocation.TileRight);
+			myNerd.Move (myNerd.PresentLocation.TileRight);
 		}
-		public static void MoveEntity(Entity what, Tile from, Tile to){
-			to.Contents.Add (what);
-			from.Contents.Remove (what);
-			if (what is PlayerCharacter) {
-				((PlayerCharacter)what).PresentLocation = to;
-			}
-		}
+
 	}
 }
 
