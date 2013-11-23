@@ -1,7 +1,7 @@
 SimpleRoguelike
 ===============
 
-A personally project and challenge, to build a roguelike, its engine, and its content generation tools using C#.
+A personal project and challenge, to build a roguelike, its engine, and its content generation tools using C#.
 
 This is probably the most challenging project I've given myself to date, at around the same difficulty as my first semester GML chess game, except that this uses many more conepts that I'm teaching myself while developing.
 
