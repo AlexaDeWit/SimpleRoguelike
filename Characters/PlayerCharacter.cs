@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Items;
 using ItemComponents;
 using Level;
+using Effects;
 
 namespace Characters
 {
@@ -32,17 +33,42 @@ namespace Characters
 		public List<Item> EquippedItems=new List<Item>();
 
 		//Derived Attributes
-		public override int ArmourValue {set;get;}
-		public override double BlockChance{ set; get; }
-		public override int BlockAmount{ set; get; }
-		public override bool CanBlock { get{
-				foreach (Item i in EquippedItems) {
-					if (i.Supports<CanBlockAttacks> ()) {
-						return true;
-					}
-				}
-				return false;
+		public override int ArmourValue (){
+			int armourBonus = 0;
+			foreach (Effect buff in StatusEffects) {
+				armourBonus += buff.Armour;
 			}
+			return Agility*Mechanics.ARMOUR_PER_AGILITY + armourBonus;
+		}
+
+
+		public override double BlockChance(){
+			foreach (Item item in EquippedItems) {
+				//Assume a shield item only has one block chance.
+				//Design decision, game engine does not support multiple block components
+				if( item.Supports<CanBlockAttacks>()){
+					return item.FirstComponentOf<CanBlockAttacks> ().BlockChance;					
+				}
+			}
+			return 0;
+		}
+		public override int BlockAmount(){
+			foreach (Item item in EquippedItems) {
+				//Assume a shield item only has one block chance.
+				//Design decision, game engine does not support multiple block components
+				if( item.Supports<CanBlockAttacks>()){
+					return item.FirstComponentOf<CanBlockAttacks> ().BlockAmount;					
+				}
+			}
+			return 0;
+		}
+		public override bool CanBlock(){
+			foreach (Item i in EquippedItems) {
+				if (i.Supports<CanBlockAttacks> ()) {
+					return true;
+				}
+			}
+			return false;
 		}
 		public override int CombatLevel {
 			get {
@@ -67,23 +93,19 @@ namespace Characters
 			Mana = MaxMana;
 		}
 
-		public override double StrikeChance {
-			get {
-				double bonusHitChance=0;
+		public override double StrikeChance (){
+				double bonusHitChance;
 				bonusHitChance = (this.Agility / 
 				                  (this.Agility + CombatConst.AGILITY_BONUS_RATIO_HIT))
 									*CombatConst.STRIKE_CHANCE_SCALING_RATIO;
 				return CombatConst.BASE_HIT_CHANCE + bonusHitChance;
-			}
 		}
-		public override double EvasionChance {
-			get {
-				double bonusEvadeChance=0;
+		public override double EvasionChance(){
+				double bonusEvadeChance;
 				bonusEvadeChance = (this.Agility /
 				                    (this.Agility + CombatConst.AGILITY_BONUS_RATIO_EVADE))
 									*CombatConst.STRIKE_CHANCE_SCALING_RATIO;
 				return CombatConst.BASE_EVASION_CHANCE + bonusEvadeChance;
-			}
 		}
 
 		//Consume an item, may be charge based

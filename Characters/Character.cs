@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using BaseClasses;
 using Combat;
 using Constants;
+using Effects;
 
 
 namespace Characters
@@ -25,6 +26,7 @@ namespace Characters
 		public int Level{get;set;}
 		//Sum of all attack damage sources
 		public List<DiceRoll> DamageComponents=new List<DiceRoll>();
+		public List<Effect> StatusEffects = new List<Effect> ();
 		
 		//Gender
 		public string Gender{get;set;}
@@ -41,15 +43,13 @@ namespace Characters
 		public long Currency{ get; set; }
 
 		//ICombat abstractions, different for each type of character
-		public abstract int ArmourValue{get;set;}
-		public abstract double BlockChance{ get;set; }
-		public abstract int BlockAmount{ get;set; }
-		public abstract double StrikeChance{ get; }
-		public abstract double EvasionChance{ get;}
+		public abstract int ArmourValue();
+		public abstract double BlockChance();
+		public abstract int BlockAmount();
+		public abstract double StrikeChance();
+		public abstract double EvasionChance();
 		public abstract int CombatLevel{ get;}
-		public abstract bool CanBlock{ get{ return CanBlock;
-			}
-		}
+		public abstract bool CanBlock();
 		public int DamageIgnore{ get; set; }
 		//DamageCalculation
 		public int CalculateDamage ()
@@ -90,8 +90,8 @@ namespace Characters
 			 *  Positive if above target, negative if below
 			 */
 			double levelDifferenceModifier = Convert.ToDouble(this.CombatLevel - defender.CombatLevel) / 100.0D;
-			double missChance = defender.EvasionChance +
-				(1.0D - this.StrikeChance) - levelDifferenceModifier;
+			double missChance = defender.EvasionChance() +
+				(1.0D - this.StrikeChance()) - levelDifferenceModifier;
 
 			//Damage to inflict will be progressively reduced
 			currentAttack.BaseDamage = this.CalculateDamage();
@@ -102,13 +102,13 @@ namespace Characters
 			if (currentAttack.AttackRoll > missChance) {
 
 				//Determine if defender is able to block(has a shield?)
-				currentAttack.DefenderCanBlock = defender.CanBlock;
+				currentAttack.DefenderCanBlock = defender.CanBlock();
 				if(currentAttack.DefenderCanBlock){
 					//Roll to beat defender's block chance
 					currentAttack.BypassBlockRoll = this.SuccessRoll();
-					if(currentAttack.BypassBlockRoll < defender.BlockChance){
+					if(currentAttack.BypassBlockRoll < defender.BlockChance()){
 						currentAttack.WasBlocked = true;
-						currentAttack.DamageBlocked = defender.BlockAmount;
+						currentAttack.DamageBlocked = defender.BlockAmount();
 						damageToInflict -= currentAttack.DamageBlocked;
 					}else{
 						//Attack got through block
@@ -118,7 +118,7 @@ namespace Characters
 				}
 				//Attack was in some way successful
 				//Do the armour damage reduction calculation
-				currentAttack.DamageReducedByArmour = ArmourDamageReduction(damageToInflict,defender.ArmourValue);
+				currentAttack.DamageReducedByArmour = ArmourDamageReduction(damageToInflict,defender.ArmourValue());
 				damageToInflict -= currentAttack.DamageReducedByArmour;
 				//Inflict the damage, and calculate how much was absorbed(determined by the defender)
 				currentAttack.DamageAbsorbed = damageToInflict - defender.SufferDamage(damageToInflict);

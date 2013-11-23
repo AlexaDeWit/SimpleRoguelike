@@ -1,6 +1,6 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Level/TileType.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Combat/ICombatCapable.cs">
     <Files>
       <File FileName="Characters/Character.cs" Line="1" Column="1" />
       <File FileName="Combat/CombatInstance.cs" Line="1" Column="1" />
@@ -9,7 +9,7 @@
       <File FileName="ItemComponents/ContributesDamage.cs" Line="1" Column="1" />
       <File FileName="ItemComponents/CanBlockAttacks.cs" Line="1" Column="1" />
       <File FileName="ItemComponents/Edible.cs" Line="1" Column="1" />
-      <File FileName="Characters/PlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="Characters/PlayerCharacter.cs" Line="72" Column="26" />
       <File FileName="ItemComponents/IConsumeEffect.cs" Line="1" Column="1" />
       <File FileName="ItemComponents/IItemComponent.cs" Line="1" Column="1" />
       <File FileName="ItemComponents/IDestructible.cs" Line="1" Column="1" />
@@ -31,6 +31,7 @@
       <File FileName="Level/Level.cs" Line="1" Column="1" />
       <File FileName="Level/Tile.cs" Line="1" Column="1" />
       <File FileName="Level/TileType.cs" Line="1" Column="1" />
+      <File FileName="Level/LevelLoader.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -38,15 +39,15 @@
           <Node name="SimpleRoguelike" expanded="True">
             <Node name="BaseClasses" expanded="True" />
             <Node name="Characters" expanded="True" />
-            <Node name="Combat" expanded="True" />
+            <Node name="Combat" expanded="True">
+              <Node name="ICombatCapable.cs" selected="True" />
+            </Node>
             <Node name="Constants" expanded="True" />
             <Node name="Enums" expanded="True" />
             <Node name="Game" expanded="True" />
             <Node name="ItemComponents" expanded="True" />
             <Node name="Items" expanded="True" />
-            <Node name="Level" expanded="True">
-              <Node name="TileType.cs" selected="True" />
-            </Node>
+            <Node name="Level" expanded="True" />
           </Node>
         </State>
       </Pad>

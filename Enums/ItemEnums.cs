@@ -7,7 +7,6 @@ namespace Enums
 	 * Enums that correspond to various aspects of an item.
 	 * </summary>
 	 */
-
 		public enum ITEM_SLOT{
 			NONE,
 			HELMET,
@@ -21,6 +20,5 @@ namespace Enums
 			RING_ONE, 
 			RING_TWO
 		};
-
 }
 

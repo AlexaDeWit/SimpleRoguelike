@@ -14,16 +14,17 @@ namespace Combat
 	{
 		//Generally will be properties
 		//Some of these will be derived from calculations in their implementations.
-		int ArmourValue{get;}
-		double BlockChance{ get; }
-		int BlockAmount{ get; }
-		double StrikeChance{ get; }
-		double EvasionChance{ get; }
+
 		int CombatLevel{ get; }
 		int Health{ get; set;}
-		bool CanBlock{ get; }
 
 		//functions
+		int ArmourValue();
+		bool CanBlock();
+		int BlockAmount();
+		double BlockChance();
+		double EvasionChance();
+		double StrikeChance();
 		int CalculateDamage();
 		double SuccessRoll();
 		int SufferDamage(int damage);

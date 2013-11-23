@@ -15,18 +15,29 @@ namespace Items
 	 */
 	public class Item : BaseClasses.Entity
 	{
+
+		public float Mass{ get; private set;}
+		public ITEM_SLOT EquipSlot{ get; private set; }
 		//The behaviour of this item is entirely defined
 		//By what components it is given
 		public List<IItemComponent> Components;
 		public bool DeleteFlag{ get; private set; }
 		//Get me the component requested by type
-		public Item(List<IItemComponent> components){
+		public Item(string name, string description, float mass, List<IItemComponent> components, ITEM_SLOT slot){
+			Name = name;
+			Description = description;
+			Mass = mass;
 			Components=components;
+			EquipSlot = slot;
 		}
 		//implicit super constructors are sly devils.
 		public List<T> ComponentsOfType<T> () where T : IItemComponent
 		{
 			return Components.OfType<T>().ToList();
+		}
+		public T FirstComponentOf<T>() where T: IItemComponent
+		{
+			return Components.OfType<T> ().FirstOrDefault ();
 		}
 		//Does this Item support this component's features:
 		public bool Supports<T> () where T:IItemComponent
@@ -46,7 +57,7 @@ namespace Items
 
 		public bool EquipTo (PlayerCharacter character)
 		{
-			if (this.Supports<Equippable> ()) {
+			if (this.EquipSlot != ITEM_SLOT.NONE ) {
 				this.ApplyEffects(character);
 				character.EquippedItems.Add(this);
 				return true;
@@ -74,16 +85,6 @@ namespace Items
 			}
 			return true;
 		}
-		public ITEM_SLOT ItemSlot<T>() where T: Equippable
-		{
-			T component = this.Components.OfType<T> ().FirstOrDefault ();
-			if (component != null) {
-				return component.EquipmentSlot;
-			} else {
-				return ITEM_SLOT.NONE;
-			}
-		}
-
 	}
 }
 

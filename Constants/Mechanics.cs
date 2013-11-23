@@ -16,6 +16,7 @@ namespace Constants
 		public const string MASS_UNIT = "kg";
 		public const int HEALTH_PER_ENDURANCE = 12;
 		public const int MANA_PER_INTELLIGENCE =15;
+		public const int ARMOUR_PER_AGILITY = 10;
 	}
 }
 
