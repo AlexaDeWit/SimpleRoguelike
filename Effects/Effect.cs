@@ -17,11 +17,13 @@ namespace Effects
 		public int Armour{ get; set;}
 		public int MaxHealth{ get; set; }
 		public int MaxMana{ get; set;}
+		public int Filling{ get; set; }
 		public Effect ()
 		{
 			Armour = 0;
 			MaxHealth = 0;
 			MaxMana = 0;
+			Filling = 0;
 		}
 	}
 }
