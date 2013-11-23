@@ -4,6 +4,7 @@ using System.Linq;
 using ItemComponents;
 using Characters;
 using Enums;
+using Effects;
 
 namespace Items
 {
@@ -21,6 +22,7 @@ namespace Items
 		//The behaviour of this item is entirely defined
 		//By what components it is given
 		public List<IItemComponent> Components;
+		public Effect ItemEffect;
 		public bool DeleteFlag{ get; private set; }
 		//Get me the component requested by type
 		public Item(string name, string description, float mass, List<IItemComponent> components, ITEM_SLOT slot){
@@ -29,6 +31,11 @@ namespace Items
 			Mass = mass;
 			Components=components;
 			EquipSlot = slot;
+			ItemEffect = new Effect();
+
+			foreach (IGrantsEffect component in this.ComponentsOfType<IGrantsEffect>()) {
+				component.ApplyEffect (this.ItemEffect);
+			}
 		}
 		//implicit super constructors are sly devils.
 		public List<T> ComponentsOfType<T> () where T : IItemComponent
@@ -57,16 +64,18 @@ namespace Items
 
 		public bool EquipTo (PlayerCharacter character)
 		{
-			if (this.EquipSlot != ITEM_SLOT.NONE ) {
-				this.ApplyEffects(character);
+			if (this.EquipSlot != ITEM_SLOT.NONE && (!character.EquippedItems.Contains(this))) {
+				character.StatusEffects.Add (this.ItemEffect);
 				character.EquippedItems.Add(this);
 				return true;
 			}
 			return false;
 		}
 		public void UnequipFrom(PlayerCharacter character){
-			this.RemoveEffects(character);
-			character.EquippedItems.Remove(this);
+			if(character.EquippedItems.Contains(this)){
+				character.StatusEffects.Remove(this.ItemEffect);
+				character.EquippedItems.Remove(this);
+			}
 		}
 		public bool ApplyEffects (Character character)
 		{

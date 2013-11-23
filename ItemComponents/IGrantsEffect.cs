@@ -1,6 +1,7 @@
 using System;
 using Characters;
 using Effects;
+using Items;
 
 namespace ItemComponents
 {
@@ -14,8 +15,8 @@ namespace ItemComponents
 	 */
 	public interface IGrantsEffect : IItemComponent
 	{
-		void ApplyEffect(Character affected);
-		void RemoveEffect(Character affected);
+		void ApplyEffect(Item affected);
+		void RemoveEffect(Item affected);
 	}
 }
 

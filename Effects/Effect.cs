@@ -9,6 +9,9 @@ namespace Effects
 	 * Shitty approach to doing things, but, hey.
 	 * </summary>
 	 */
+	
+	//Seriously consider consending all effects of an item into this class and putting it in the item,
+
 	public class Effect
 	{
 		public int Armour{ get; set;}

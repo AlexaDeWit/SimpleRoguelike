@@ -1,6 +1,7 @@
 using System;
 using Characters;
 using Effects;
+using Items;
 
 namespace ItemComponents
 {
@@ -11,15 +12,16 @@ namespace ItemComponents
 	 */
 	public class GrantsArmour : IGrantsEffect
 	{
-		private Effect _armourIncrease = new Effect ();
+		private int _armourIncrease;
+		private Item _parentItem;
 		public GrantsArmour(int armour){
-			_armourIncrease.Armour = armour;
+			_armourIncrease = armour;
 		}
-		public void ApplyEffect(Character affected){
-			affected.StatusEffects.Add (this._armourIncrease);
+		public void ApplyEffect(Item affected){
+			affected.ItemEffect.Armour += _armourIncrease;
 		}
-		public void RemoveEffect(Character affected){
-			affected.StatusEffects.Remove (this._armourIncrease);
+		public void RemoveEffect(Item affected){
+			affected.ItemEffect.Armour -= _armourIncrease;
 		}
 	}
 }
