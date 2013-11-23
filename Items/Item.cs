@@ -77,23 +77,23 @@ namespace Items
 				character.EquippedItems.Remove(this);
 			}
 		}
-		public bool ApplyEffects (Character character)
-		{
-			//Am I doing this right?
-			//Components is a List of Type IItemComponent from which IGrantsEffect is inherited
-			List<IGrantsEffect> effects = this.Components.OfType<IGrantsEffect>().ToList();
-			foreach (IGrantsEffect effect in effects) {
-				effect.ApplyEffect(character);
-			}
-			return true;
-		}
-		public bool RemoveEffects(Character character){
-			List<IGrantsEffect> effects = this.Components.OfType<IGrantsEffect>().ToList();
-			foreach (IGrantsEffect effect in effects) {
-				effect.RemoveEffect(character);
-			}
-			return true;
-		}
+//		public bool ApplyEffects (Character character)
+//		{
+//			//Am I doing this right?
+//			//Components is a List of Type IItemComponent from which IGrantsEffect is inherited
+//			List<IGrantsEffect> effects = this.Components.OfType<IGrantsEffect>().ToList();
+//			foreach (IGrantsEffect effect in effects) {
+//				effect.ApplyEffect(character);
+//			}
+//			return true;
+//		}
+//		public bool RemoveEffects(Character character){
+//			List<IGrantsEffect> effects = this.Components.OfType<IGrantsEffect>().ToList();
+//			foreach (IGrantsEffect effect in effects) {
+//				effect.RemoveEffect(character);
+//			}
+//			return true;
+//		}
 	}
 }
 
