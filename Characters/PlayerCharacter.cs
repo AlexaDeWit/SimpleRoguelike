@@ -4,7 +4,7 @@ using Constants;
 using System.Collections.Generic;
 using Items;
 using ItemComponents;
-using Level;
+using Levels;
 using Effects;
 
 namespace Characters
@@ -38,7 +38,7 @@ namespace Characters
 			foreach (Effect buff in StatusEffects) {
 				armourBonus += buff.Armour;
 			}
-			return Agility*Mechanics.ARMOUR_PER_AGILITY + armourBonus;
+			return Agility*Mechanics.ARMOUR_PER_AGILITY + armourBonus + BaseArmour;
 		}
 
 
@@ -97,7 +97,7 @@ namespace Characters
 			foreach (Effect buff in StatusEffects) {
 				total += buff.MaxHealth;
 			}
-			return total;
+			return total + BaseHealth;
 		}
 		public override int MaxMana(){
 			int total = 0;
@@ -105,7 +105,7 @@ namespace Characters
 			foreach (Effect buff in StatusEffects) {
 				total += buff.MaxMana;
 			}
-			return total;
+			return total + BaseMana;
 		}
 		public override double StrikeChance (){
 				double bonusHitChance;

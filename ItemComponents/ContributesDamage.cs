@@ -1,6 +1,7 @@
 using System;
 using Characters;
 using BaseClasses;
+using Items;
 
 namespace ItemComponents
 {
@@ -8,6 +9,8 @@ namespace ItemComponents
 	 * <summary>
 	 * Interface that allows items to contribute to their wielder's attack damage.
 	 * Dependant upon the DiceRoll class which determines its damage component
+	 * 
+	 * Only one Damage component is allowed on a given item.
 	 * </summary>
 	 */
 	public class ContributesDamage : IGrantsEffect
@@ -36,11 +39,11 @@ namespace ItemComponents
 		}
 
 		//Interface implementation
-		public void ApplyEffect(Character owner){
-			owner.DamageComponents.Add(this._diceDamage);
+		public void ApplyEffect(Item owner){
+			owner.ItemEffect.DamageComponent = _diceDamage;
 		}
-		public void RemoveEffect(Character owner){
-			owner.DamageComponents.Remove(this._diceDamage);
+		public void RemoveEffect(Item owner){
+			owner.ItemEffect.DamageComponent = _diceDamage;
 		}
 	}
 }

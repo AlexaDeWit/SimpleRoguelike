@@ -1,5 +1,5 @@
 using System;
-using Level;
+using Levels;
 
 namespace Characters
 {
@@ -21,19 +21,16 @@ namespace Characters
 		private double _blockChance;
 		private int _block;
 		private bool _canBlock;
-		private int _armour;
-		private int _maxMana;
-		private int _maxHealth;
 
 		public override int MaxHealth (){
-			return _maxHealth;
+			return BaseHealth;
 		}
-		public abstract int MaxMana (){
-			return _maxMana;
+		public override int MaxMana (){
+			return BaseMana;
 		}
 
 		public override int ArmourValue(){
-			return _armour;
+			return BaseArmour;
 		}
 		public override bool CanBlock(){
 			return _canBlock;
@@ -72,15 +69,15 @@ namespace Characters
 			//End params
 			Name = name;
 			Description = description;
-			_armour = armour;
+			BaseArmour = armour;
 			_canBlock = ableToBlock;
 			_block = blockAmount;
 			_blockChance = blockChance;
 			_hitChance = hitChance;
 			_evasion = dodgeChance;
 			Level = combatLevel;
-			_maxHealth = maxHealth;
-			_maxMana = maxMana;
+			BaseHealth = maxHealth;
+			BaseMana = maxMana;
 			PresentLocation = location;
 		}
 	}

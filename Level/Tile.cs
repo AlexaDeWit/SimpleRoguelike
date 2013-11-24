@@ -2,7 +2,7 @@ using System;
 using BaseClasses;
 using System.Collections.Generic;
 
-namespace Level
+namespace Levels
 {
 	/*
 	 * <summary>

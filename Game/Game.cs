@@ -1,5 +1,5 @@
 using System;
-using Level;
+using Levels;
 using Characters;
 using BaseClasses;
 
@@ -18,7 +18,7 @@ namespace Game
 			//define a tile type of Grass
 			TileType grass = new TileType ("Grass", "Some grass-covered land", true, false);
 			//Create a new map, 15 by 15
-			Level.Level GameMap = new Level.Level (MAP_WIDTH, MAP_HEIGHT);
+			Level GameMap = new Level (MAP_WIDTH, MAP_HEIGHT);
 
 			//create a place to store references to Tiles as they are generated
 			Tile tempTile;

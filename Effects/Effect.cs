@@ -1,4 +1,5 @@
 using System;
+using BaseClasses;
 
 namespace Effects
 {
@@ -18,6 +19,7 @@ namespace Effects
 		public int MaxHealth{ get; set; }
 		public int MaxMana{ get; set;}
 		public int Filling{ get; set; }
+		public DiceRoll DamageComponent;
 		public Effect ()
 		{
 			Armour = 0;

@@ -2,7 +2,7 @@ using System;
 using BaseClasses;
 
 
-namespace Level
+namespace Levels
 {
 	public class LevelTransition : Entity
 	{

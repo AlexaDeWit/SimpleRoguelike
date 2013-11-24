@@ -1,6 +1,6 @@
 using System;
 
-namespace Level
+namespace Levels
 {
 	public class LevelRenderer
 	{

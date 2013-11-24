@@ -19,9 +19,10 @@ namespace Characters
 	{
 		//Character Stats
 		public Race CharacterRace{ get; set; } 
-
+		public int BaseHealth{ get; set;}
+		public int BaseMana{get;set;}
+		public int BaseArmour{ get; set;}
 		public int Health{ get; set; } 
-
 		public int Mana{ get; set; }
 		public int Level{get;set;}
 		//Sum of all attack damage sources

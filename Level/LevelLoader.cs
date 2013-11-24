@@ -1,7 +1,7 @@
 using System;
 using BaseClasses;
 
-namespace Level
+namespace Levels
 {
 	/*
 	 * <summary>
