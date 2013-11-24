@@ -13,7 +13,6 @@ namespace ItemComponents
 	public class GrantsArmour : IGrantsEffect
 	{
 		private int _armourIncrease;
-		private Item _parentItem;
 		public GrantsArmour(int armour){
 			_armourIncrease = armour;
 		}

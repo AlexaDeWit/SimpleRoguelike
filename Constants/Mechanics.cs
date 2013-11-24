@@ -17,6 +17,7 @@ namespace Constants
 		public const int HEALTH_PER_ENDURANCE = 12;
 		public const int MANA_PER_INTELLIGENCE =15;
 		public const int ARMOUR_PER_AGILITY = 10;
+		public const int DIE_OF_HUNGER = 100;
 	}
 }
 
