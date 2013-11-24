@@ -87,12 +87,26 @@ namespace Characters
 			Charisma = race.BaseCharisma;
 			Endurance = race.BaseEndurance;
 
-			MaxHealth = Endurance * Constants.Mechanics.HEALTH_PER_ENDURANCE;
-			Health = MaxHealth;
-			MaxMana = Endurance * Constants.Mechanics.MANA_PER_INTELLIGENCE;
-			Mana = MaxMana;
+			Health = MaxHealth();
+			Mana = MaxMana();
 		}
-
+		public override int MaxHealth ()
+		{
+			int total = 0;
+			total += Endurance * Mechanics.HEALTH_PER_ENDURANCE;
+			foreach (Effect buff in StatusEffects) {
+				total += buff.MaxHealth;
+			}
+			return total;
+		}
+		public override int MaxMana(){
+			int total = 0;
+			total += Intelligence * Mechanics.MANA_PER_INTELLIGENCE;
+			foreach (Effect buff in StatusEffects) {
+				total += buff.MaxMana;
+			}
+			return total;
+		}
 		public override double StrikeChance (){
 				double bonusHitChance;
 				bonusHitChance = (this.Agility / 

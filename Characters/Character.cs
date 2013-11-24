@@ -19,9 +19,6 @@ namespace Characters
 	{
 		//Character Stats
 		public Race CharacterRace{ get; set; } 
-		public int BaseHealth{ get; set; } 
-		public int BaseMana{ get; set; }
-		public int BaseArmour{get;set;}
 
 		public int Health{ get; set; } 
 
@@ -45,12 +42,8 @@ namespace Characters
 		//Wallet
 		public long Currency{ get; set; }
 
-		public virtual int MaxHealth (){
-			return BaseHealth;
-		}
-		public virtual int MaxMana (){
-			return BaseMana;
-		}
+		public abstract int MaxHealth ();
+		public abstract int MaxMana ();
 
 
 		//ICombat abstractions, different for each type of character

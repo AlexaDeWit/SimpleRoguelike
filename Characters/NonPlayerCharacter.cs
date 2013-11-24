@@ -22,7 +22,15 @@ namespace Characters
 		private int _block;
 		private bool _canBlock;
 		private int _armour;
+		private int _maxMana;
+		private int _maxHealth;
 
+		public override int MaxHealth (){
+			return _maxHealth;
+		}
+		public abstract int MaxMana (){
+			return _maxMana;
+		}
 
 		public override int ArmourValue(){
 			return _armour;
@@ -57,6 +65,8 @@ namespace Characters
 					double hitChance,
 					double dodgeChance,
 					int combatLevel,
+					int maxHealth,
+					int maxMana,
 					Tile location){
 
 			//End params
@@ -69,6 +79,8 @@ namespace Characters
 			_hitChance = hitChance;
 			_evasion = dodgeChance;
 			Level = combatLevel;
+			_maxHealth = maxHealth;
+			_maxMana = maxMana;
 			PresentLocation = location;
 		}
 	}

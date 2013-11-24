@@ -1,20 +1,26 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Characters/PlayerCharacter.cs">
     <Files>
-      <File FileName="Items/Item.cs" Line="36" Column="1" />
-      <File FileName="Characters/PlayerCharacter.cs" Line="99" Column="4" />
-      <File FileName="ItemComponents/GrantsArmour.cs" Line="13" Column="1" />
+      <File FileName="Items/Item.cs" Line="86" Column="5" />
+      <File FileName="Characters/PlayerCharacter.cs" Line="117" Column="64" />
+      <File FileName="ItemComponents/GrantsArmour.cs" Line="1" Column="1" />
       <File FileName="Characters/NonPlayerCharacter.cs" Line="1" Column="1" />
-      <File FileName="ItemComponents/Consumeable.cs" Line="26" Column="31" />
+      <File FileName="ItemComponents/Consumeable.cs" Line="30" Column="32" />
       <File FileName="Effects/Effect.cs" Line="26" Column="11" />
+      <File FileName="Characters/Character.cs" Line="166" Column="38" />
+      <File FileName="Enums/ItemEnums.cs" Line="1" Column="1" />
+      <File FileName="Constants/Mechanics.cs" Line="1" Column="1" />
+      <File FileName="Combat/CombatInstance.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
+        <State expanded="True">
           <Node name="SimpleRoguelike" expanded="True">
             <Node name="BaseClasses" expanded="True" />
-            <Node name="Characters" expanded="True" />
+            <Node name="Characters" expanded="True">
+              <Node name="PlayerCharacter.cs" selected="True" />
+            </Node>
             <Node name="Combat" expanded="True" />
             <Node name="Constants" expanded="True" />
             <Node name="Effects" expanded="True" />
