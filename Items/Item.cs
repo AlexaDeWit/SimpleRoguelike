@@ -34,7 +34,7 @@ namespace Items
 			ItemEffect = new Effect();
 
 			foreach (IGrantsEffect component in this.ComponentsOfType<IGrantsEffect>()) {
-				component.ApplyEffect (this.ItemEffect);
+				component.ApplyEffect (this);
 			}
 		}
 		//implicit super constructors are sly devils.
@@ -76,6 +76,15 @@ namespace Items
 				character.StatusEffects.Remove(this.ItemEffect);
 				character.EquippedItems.Remove(this);
 			}
+		}
+		public void ConsumeCharge(){
+			foreach (Consumeable consumeEffect in this.ComponentsOfType<Consumeable>()) {
+				consumeEffect.ConsumeCharge ();
+				if (consumeEffect.DestroyConditionMet) {
+					this.DeleteFlag = true;
+				}
+			}
+			this.Update ();
 		}
 //		public bool ApplyEffects (Character character)
 //		{

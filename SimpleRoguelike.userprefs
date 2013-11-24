@@ -1,14 +1,17 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Items/Item.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Items/Item.cs" Line="36" Column="1" />
-      <File FileName="Characters/PlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="Characters/PlayerCharacter.cs" Line="99" Column="4" />
       <File FileName="ItemComponents/GrantsArmour.cs" Line="13" Column="1" />
+      <File FileName="Characters/NonPlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/Consumeable.cs" Line="26" Column="31" />
+      <File FileName="Effects/Effect.cs" Line="26" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
+        <State expanded="True" selected="True">
           <Node name="SimpleRoguelike" expanded="True">
             <Node name="BaseClasses" expanded="True" />
             <Node name="Characters" expanded="True" />
@@ -18,9 +21,7 @@
             <Node name="Enums" expanded="True" />
             <Node name="Game" expanded="True" />
             <Node name="ItemComponents" expanded="True" />
-            <Node name="Items" expanded="True">
-              <Node name="Item.cs" selected="True" />
-            </Node>
+            <Node name="Items" expanded="True" />
             <Node name="Level" expanded="True" />
           </Node>
         </State>

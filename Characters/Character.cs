@@ -19,9 +19,12 @@ namespace Characters
 	{
 		//Character Stats
 		public Race CharacterRace{ get; set; } 
-		public int MaxHealth{ get; set; } 
+		public int BaseHealth{ get; set; } 
+		public int BaseMana{ get; set; }
+		public int BaseArmour{get;set;}
+
 		public int Health{ get; set; } 
-		public int MaxMana{ get; set; }
+
 		public int Mana{ get; set; }
 		public int Level{get;set;}
 		//Sum of all attack damage sources
@@ -41,6 +44,14 @@ namespace Characters
 
 		//Wallet
 		public long Currency{ get; set; }
+
+		public virtual int MaxHealth (){
+			return BaseHealth;
+		}
+		public virtual int MaxMana (){
+			return BaseMana;
+		}
+
 
 		//ICombat abstractions, different for each type of character
 		public abstract int ArmourValue();
@@ -147,7 +158,14 @@ namespace Characters
 				return damageRatio;
 			}
 		}
-
+		public virtual void MakeEffectBaseline(Effect buff){
+			this.BaseMana += buff.MaxMana;
+			this.BaseHealth += buff.MaxHealth;
+			this.BaseArmour += buff.Armour;
+			if (this.StatusEffects.Contains (buff)) {
+				this.StatusEffects.Remove (buff);
+			}
+		}
        	
 	}
 

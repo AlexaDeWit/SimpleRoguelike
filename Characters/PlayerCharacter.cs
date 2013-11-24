@@ -111,13 +111,11 @@ namespace Characters
 		//Consume an item, may be charge based
 		public bool Consume(Item consumeable){
 
-			if (consumeable.Supports<IConsumeEffect> ()) {
+			if (consumeable.Supports<Consumeable> ()) {
 				//Allows for multiple consume effects
-				foreach (IConsumeEffect effect in consumeable.ComponentsOfType<IConsumeEffect>()) {
-					effect.ApplyEffect (this);
-				}
-				//Update the item so it can determine if it is fully consumed
-				consumeable.Update ();
+				MakeEffectBaseline (consumeable.ItemEffect);
+				//Will update the item to determine if it should be deleted
+				consumeable.ConsumeCharge ();
 				//First condition exists to allow for items the player doesn't have to be consumed
 				if(this.Backpack.Contains(consumeable) && consumeable.DeleteFlag){
 					this.Backpack.Remove (consumeable);
