@@ -88,6 +88,7 @@ namespace Characters
 		}
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Characters.NonPlayerCharacter"/> class.
+		/// Important note: This character will insert itself into the game map.
 		/// </summary>
 		/// <param name="name">NPC's Name.</param>
 		/// <param name="description">NPC's Description.</param>
@@ -127,9 +128,6 @@ namespace Characters
 			BaseHealth = maxHealth;
 			BaseMana = maxMana;
 			PresentLocation = location;
-			if (!location.Contents.Contains (this)) {
-				location.Contents.Add (this);
-			}
 		}
 	}
 }

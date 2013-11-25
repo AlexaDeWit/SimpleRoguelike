@@ -32,13 +32,12 @@ namespace Game
 			} 
 
 			//Lets define a race for our character to be
-			Race human = new Race (10, 9, 11, 9, 12);
+			Race human = new Race ("Human", "Skinny little betas that can't fight orcs to save their lives.",10, 9, 11, 9, 12);
 			//okay, race defined, lets give birth to her
-			PlayerCharacter myNerd = new PlayerCharacter ("Alexa","Some nerd wasting her time.",human);
+			PlayerCharacter myNerd = new PlayerCharacter ("Alexa","Some nerd wasting her time.",human,GameMap.Tiles[1][1]);
 			//Put her in the game world, at, say, 1,1 (not at the map edge)
 			//uses mutual reference so that the player doesn not need to be "found" on the map every time
 			//we wish to act on it.
-			GameMap.Tiles [1] [1].Contents.Add (myNerd);
 			myNerd.PresentLocation = GameMap.Tiles [1] [1];
 
 
