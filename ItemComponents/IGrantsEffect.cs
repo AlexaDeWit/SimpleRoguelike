@@ -5,17 +5,20 @@ using Items;
 
 namespace ItemComponents
 {
-	/*
-	 * <summary>
-	 * Base interface from which specific effect types will be drawn.
-	 * 
-	 * Defines the item as causing and removing affects upon a character
-	 * as appropriate.
-	 * </summary>
-	 */
+	/// <summary>
+	/// Interface that defines how a component will contribute an effect to an Item.
+	/// </summary>
 	public interface IGrantsEffect : IItemComponent
 	{
+		/// <summary>
+		/// Adds the effect this component has to an item(generally will be the parent item)
+		/// </summary>
+		/// <param name="affected">Item to accept the effect</param>
 		void ApplyEffect(Item affected);
+		/// <summary>
+		/// Removes the effect this component has from an item(generally will be the parent item)
+		/// </summary>
+		/// <param name="affected">Item to lose the effect</param>
 		void RemoveEffect(Item affected);
 	}
 }

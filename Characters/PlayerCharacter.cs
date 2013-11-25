@@ -63,7 +63,6 @@ namespace Characters
 		public List<Item> EquippedItems=new List<Item>();
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Characters.PlayerCharacter"/> class.
-		/// Important note: This character will insert itself into the game map.
 		/// </summary>
 		/// <param name="name">The character's name.</param>
 		/// <param name="description">A description of the character.</param>

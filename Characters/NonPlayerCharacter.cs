@@ -88,7 +88,6 @@ namespace Characters
 		}
 		/// <summary>
 		/// Initializes a new instance of the <see cref="Characters.NonPlayerCharacter"/> class.
-		/// Important note: This character will insert itself into the game map.
 		/// </summary>
 		/// <param name="name">NPC's Name.</param>
 		/// <param name="description">NPC's Description.</param>
