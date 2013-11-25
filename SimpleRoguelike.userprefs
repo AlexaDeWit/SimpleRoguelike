@@ -1,18 +1,18 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Characters/NonPlayerCharacter.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Pathfinding/Pathfinder.cs" Line="15" Column="6" />
-      <File FileName="Items/Item.cs" Line="1" Column="1" />
+      <File FileName="Pathfinding/Pathfinder.cs" Line="1" Column="1" />
+      <File FileName="Items/Item.cs" Line="136" Column="14" />
       <File FileName="BaseClasses/DiceRoll.cs" Line="1" Column="1" />
       <File FileName="BaseClasses/Entity.cs" Line="1" Column="1" />
       <File FileName="Characters/Character.cs" Line="1" Column="1" />
       <File FileName="Characters/Diet.cs" Line="1" Column="1" />
       <File FileName="Characters/Faction.cs" Line="1" Column="1" />
       <File FileName="Characters/NonPlayerCharacter.cs" Line="90" Column="91" />
-      <File FileName="Characters/PlayerCharacter.cs" Line="65" Column="88" />
+      <File FileName="Characters/PlayerCharacter.cs" Line="1" Column="1" />
       <File FileName="Constants/Mechanics.cs" Line="1" Column="1" />
-      <File FileName="ItemComponents/GrantsArmour.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/GrantsArmour.cs" Line="19" Column="77" />
       <File FileName="Characters/Race.cs" Line="1" Column="1" />
       <File FileName="Combat/CombatInstance.cs" Line="1" Column="1" />
       <File FileName="Combat/ICombatCapable.cs" Line="1" Column="1" />
@@ -20,18 +20,21 @@
       <File FileName="Effects/Effect.cs" Line="1" Column="1" />
       <File FileName="Game/Game.cs" Line="1" Column="1" />
       <File FileName="Enums/ItemEnums.cs" Line="1" Column="1" />
-      <File FileName="ItemComponents/CanBlockAttacks.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/CanBlockAttacks.cs" Line="11" Column="29" />
       <File FileName="Levels/LevelLoader.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/Consumeable.cs" Line="52" Column="78" />
+      <File FileName="ItemComponents/IGrantsEffect.cs" Line="7" Column="2" />
+      <File FileName="ItemComponents/ContributesDamage.cs" Line="29" Column="91" />
+      <File FileName="ItemComponents/IDestructible.cs" Line="13" Column="49" />
+      <File FileName="ItemComponents/IItemComponent.cs" Line="7" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
+        <State expanded="True" selected="True">
           <Node name="SimpleRoguelike" expanded="True">
             <Node name="References" expanded="True" />
             <Node name="BaseClasses" expanded="True" />
-            <Node name="Characters" expanded="True">
-              <Node name="NonPlayerCharacter.cs" selected="True" />
-            </Node>
+            <Node name="Characters" expanded="True" />
             <Node name="Combat" expanded="True" />
             <Node name="Constants" expanded="True" />
             <Node name="Effects" expanded="True" />

@@ -4,75 +4,115 @@ using System.Collections.Generic;
 
 namespace Levels
 {
-	/*
-	 * <summary>
-	 * An individual tile in the game world. 
-	 * Uses 4 methods to return its adjacent tiles by referencing its containing level
-	 * </summary>
-	 */
+	/// <summary>
+	/// An individual tile in the game world. 
+	/// All items on the tile are contained within a single list in this class.
+	/// The object also contains a reference to the level is is located on, as well as its
+	/// position within that level.
+	/// </summary>
 	public class Tile 
 	{
-		private Level _level;
+		/// <summary>
+		/// Gets the level the tile is present on
+		/// </summary>
+		/// <value>The level the tile is present on.</value>
+		public Level LevelPresent{ get; private set; }
+		/// <summary>
+		/// The horizontal location of the tile in the level.
+		/// </summary>
+		/// <value>The horizontal location of the tile in the level.</value>
 		public int X{ get; private set; }
+		/// <summary>
+		/// The vertical location of the tile in the level.
+		/// </summary>
+		/// <value>The vertical location of the tile in the level.</value>
 		public int Y{ get; private set; }
-		public TileType TileStyle;
+		/// <summary>
+		/// A tile style definition object. <see cref="Levels.TileType"/>
+		/// </summary>
+		public TileType TileStyle{get; private set;}
+		/// <summary>
+		/// Gets the contents.
+		/// </summary>
+		/// <value>The contents.</value>
 		public List<Entity> Contents{ get; private set;}
-
+		/// <summary>
+		/// Initializes a new instance of the <see cref="Levels.Tile"/> class.
+		/// </summary>
+		/// <param name="x">The x coordinate.</param>
+		/// <param name="y">The y coordinate.</param>
+		/// <param name="level">The level this tile will be present in</param>
+		/// <param name="type">The style of tile it is</param>
 		public Tile (int x, int y,Level level, TileType type){
 			X = x;
 			Y = y;
-			_level = level;
+			LevelPresent = level;
 			TileStyle = type;
 			Contents = new List<Entity>();
 		}
-		//These will return the current tile if the adjacent tile is out of the level bounds
-		//Considering changing it to a wrapping level system.
+		/// <summary>
+		/// Gets the adjecent tile to the right of this one
+		/// It will return itself it it attempts to "reach" off the map
+		/// </summary>
+		/// <value>The tile to the right.</value>
 		public Tile TileRight {
-			set {
-				TileRight = value;
-			}
 			get{
-				if(_level.Tiles.GetLength(0) >= this.X){
-					return _level.Tiles[this.X+1][this.Y];
+				if(LevelPresent.Tiles.GetLength(0) >= this.X){
+					return LevelPresent.Tiles[this.X+1][this.Y];
 				}
 				else{
 					return this;
 				}
 			}
 		}
+		/// <summary>
+		/// Gets the adjecent tile to the left of this one
+		/// It will return itself it it attempts to "reach" off the map
+		/// </summary>
+		/// <value>The tile to the left.</value>
 		public Tile TileLeft {
 			set {
 				TileLeft = value;
 			}
 			get{
 				if(this.X>0){
-					return _level.Tiles[this.X-1][this.Y];
+					return LevelPresent.Tiles[this.X-1][this.Y];
 				}
 				else{
 					return this;
 				}
 			}
 		}
+		/// <summary>
+		/// Gets the adjecent tile to above this one
+		/// It will return itself it it attempts to "reach" off the map
+		/// </summary>
+		/// <value>The tile above/value>
 		public Tile TileAbove {
 			set {
 				TileAbove = value;
 			}
 			get{
 				if(this.Y > 0){
-					return _level.Tiles[this.X][this.Y-1];
+					return LevelPresent.Tiles[this.X][this.Y-1];
 				}
 				else{
 					return this;
 				}
 			}
 		}
+		/// <summary>
+		/// Gets the adjecent tile below of this one
+		/// It will return itself it it attempts to "reach" off the map
+		/// </summary>
+		/// <value>The tile below.</value>
 		public Tile TileBelow {
 			set{
 				TileBelow = value;
 			}
 			get{
-				if(_level.Tiles.GetLength(1) >= this.Y){
-					return _level.Tiles[this.X][this.Y+1];
+				if(LevelPresent.Tiles.GetLength(1) >= this.Y){
+					return LevelPresent.Tiles[this.X][this.Y+1];
 				}
 				else{
 					return this;
