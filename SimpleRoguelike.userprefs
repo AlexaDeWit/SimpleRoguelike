@@ -3,16 +3,16 @@
   <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Pathfinding/Pathfinder.cs" Line="1" Column="1" />
-      <File FileName="Items/Item.cs" Line="136" Column="14" />
+      <File FileName="Items/Item.cs" Line="88" Column="3" />
       <File FileName="BaseClasses/DiceRoll.cs" Line="1" Column="1" />
       <File FileName="BaseClasses/Entity.cs" Line="1" Column="1" />
-      <File FileName="Characters/Character.cs" Line="1" Column="1" />
+      <File FileName="Characters/Character.cs" Line="67" Column="53" />
       <File FileName="Characters/Diet.cs" Line="1" Column="1" />
       <File FileName="Characters/Faction.cs" Line="1" Column="1" />
-      <File FileName="Characters/NonPlayerCharacter.cs" Line="90" Column="91" />
+      <File FileName="Characters/NonPlayerCharacter.cs" Line="134" Column="1" />
       <File FileName="Characters/PlayerCharacter.cs" Line="1" Column="1" />
       <File FileName="Constants/Mechanics.cs" Line="1" Column="1" />
-      <File FileName="ItemComponents/GrantsArmour.cs" Line="19" Column="77" />
+      <File FileName="ItemComponents/GrantsArmour.cs" Line="1" Column="1" />
       <File FileName="Characters/Race.cs" Line="1" Column="1" />
       <File FileName="Combat/CombatInstance.cs" Line="1" Column="1" />
       <File FileName="Combat/ICombatCapable.cs" Line="1" Column="1" />
@@ -20,13 +20,18 @@
       <File FileName="Effects/Effect.cs" Line="1" Column="1" />
       <File FileName="Game/Game.cs" Line="1" Column="1" />
       <File FileName="Enums/ItemEnums.cs" Line="1" Column="1" />
-      <File FileName="ItemComponents/CanBlockAttacks.cs" Line="11" Column="29" />
-      <File FileName="Levels/LevelLoader.cs" Line="1" Column="1" />
-      <File FileName="ItemComponents/Consumeable.cs" Line="52" Column="78" />
-      <File FileName="ItemComponents/IGrantsEffect.cs" Line="7" Column="2" />
-      <File FileName="ItemComponents/ContributesDamage.cs" Line="29" Column="91" />
-      <File FileName="ItemComponents/IDestructible.cs" Line="13" Column="49" />
-      <File FileName="ItemComponents/IItemComponent.cs" Line="7" Column="36" />
+      <File FileName="ItemComponents/CanBlockAttacks.cs" Line="1" Column="1" />
+      <File FileName="Levels/LevelLoader.cs" Line="2" Column="1" />
+      <File FileName="ItemComponents/Consumeable.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/IGrantsEffect.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/ContributesDamage.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/IDestructible.cs" Line="1" Column="1" />
+      <File FileName="ItemComponents/IItemComponent.cs" Line="1" Column="1" />
+      <File FileName="Levels/Levels.cs" Line="1" Column="1" />
+      <File FileName="Levels/LevelTransition.cs" Line="1" Column="1" />
+      <File FileName="Levels/Tile.cs" Line="25" Column="1" />
+      <File FileName="Levels/TileType.cs" Line="33" Column="7" />
+      <File FileName="Levels/LevelRenderer.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
