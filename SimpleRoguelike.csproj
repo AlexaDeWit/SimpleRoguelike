@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{081F1B0E-B65E-4E14-9330-2DC97A0ABFFC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SimpleRoguelike</RootNamespace>
+    <AssemblyName>SimpleRoguelike</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="BaseClasses\Entity.cs" />
+    <Compile Include="Combat\CombatInstance.cs" />
+    <Compile Include="Constants\CombatConst.cs" />
+    <Compile Include="Constants\Mechanics.cs" />
+    <Compile Include="ItemComponents\IItemComponent.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="ItemComponents\GrantsArmour.cs" />
+    <Compile Include="Characters\Diet.cs" />
+    <Compile Include="Characters\Faction.cs" />
+    <Compile Include="Characters\NonPlayerCharacter.cs" />
+    <Compile Include="Characters\PlayerCharacter.cs" />
+    <Compile Include="Characters\Race.cs" />
+    <Compile Include="ItemComponents\ContributesDamage.cs" />
+    <Compile Include="BaseClasses\DiceRoll.cs" />
+    <Compile Include="Combat\ICombatCapable.cs" />
+    <Compile Include="ItemComponents\IGrantsEffect.cs" />
+    <Compile Include="ItemComponents\CanBlockAttacks.cs" />
+    <Compile Include="Game\Game.cs" />
+    <Compile Include="ItemComponents\IDestructible.cs" />
+    <Compile Include="Effects\Effect.cs" />
+    <Compile Include="ItemComponents\Consumeable.cs" />
+    <Compile Include="Characters\Character.cs" />
+    <Compile Include="Pathfinding\Pathfinder.cs" />
+    <Compile Include="Levels\LevelLoader.cs" />
+    <Compile Include="Levels\LevelTransition.cs" />
+    <Compile Include="Levels\Levels.cs" />
+    <Compile Include="Levels\Tile.cs" />
+    <Compile Include="Levels\TileType.cs" />
+    <Compile Include="ItemComponents\LimitedDurability.cs" />
+    <Compile Include="Enums\GAME_COMMAND.cs" />
+    <Compile Include="Enums\DIRECTION.cs" />
+    <Compile Include="Enums\ITEM_SLOT.cs" />
+    <Compile Include="GameRenderer\ConsoleRenderer.cs" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <DotNetNamingPolicy DirectoryNamespaceAssociation="Hierarchical" ResourceNamePolicy="FileFormatDefault" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="Game\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Pathfinding\" />
+    <Folder Include="Levels\" />
+    <Folder Include="GameRenderer\" />
+  </ItemGroup>
+</Project>
