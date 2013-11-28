@@ -2,6 +2,7 @@ using System;
 using Levels;
 using Characters;
 using BaseClasses;
+using GameRenderer;
 
 namespace Game
 {
@@ -19,6 +20,7 @@ namespace Game
 			TileType grass = new TileType ("Grass", "Some grass-covered land", true, false);
 			//Create a new map, 15 by 15
 			Level GameMap = new Level (MAP_WIDTH, MAP_HEIGHT);
+			ConsoleRenderer renderer = new ConsoleRenderer (GameMap);
 
 			//create a place to store references to Tiles as they are generated
 			Tile tempTile;
@@ -39,6 +41,9 @@ namespace Game
 			//uses mutual reference so that the player doesn not need to be "found" on the map every time
 			//we wish to act on it.
 			myNerd.PresentLocation = GameMap.Tiles [1] [1];
+			GameMap.Tiles [1] [1].Contents.Add (myNerd);
+
+			renderer.WriteToConsole ();
 
 
 			//Lets try moving her to the right.

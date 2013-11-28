@@ -1,6 +1,7 @@
 using System;
 using BaseClasses;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Levels
 {
@@ -118,6 +119,15 @@ namespace Levels
 					return this;
 				}
 			}
+		}
+		public bool ContainsType<T> () where T: Entity{
+			if (Contents.OfType<T> ().Count () > 0) {
+				return true;
+			}
+			return false;
+		}
+		public T FirstEntityOfType<T>() where T: Entity	{
+			return Contents.OfType<T> ().FirstOrDefault ();
 		}
 	}
 }

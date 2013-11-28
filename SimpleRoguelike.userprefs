@@ -1,16 +1,19 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Enums/GAME_COMMAND.cs" Line="8" Column="17" />
+      <File FileName="Enums/DIRECTION.cs" Line="8" Column="7" />
+      <File FileName="Enums/ITEM_SLOT.cs" Line="14" Column="10" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
+        <State expanded="True" selected="True">
           <Node name="SimpleRoguelike" expanded="True">
             <Node name="References" expanded="True" />
             <Node name="BaseClasses" expanded="True" />
             <Node name="Characters" expanded="True" />
-            <Node name="Combat" expanded="True">
-              <Node name="ICombatCapable.cs" selected="True" />
-            </Node>
+            <Node name="Combat" expanded="True" />
             <Node name="Constants" expanded="True" />
             <Node name="Effects" expanded="True" />
             <Node name="Enums" expanded="True" />
