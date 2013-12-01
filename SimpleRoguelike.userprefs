@@ -1,10 +1,18 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Enums/GAME_COMMAND.cs">
     <Files>
       <File FileName="Enums/GAME_COMMAND.cs" Line="8" Column="17" />
-      <File FileName="Enums/DIRECTION.cs" Line="8" Column="7" />
-      <File FileName="Enums/ITEM_SLOT.cs" Line="14" Column="10" />
+      <File FileName="Enums/DIRECTION.cs" Line="1" Column="1" />
+      <File FileName="Enums/ITEM_SLOT.cs" Line="1" Column="1" />
+      <File FileName="Game/Game.cs" Line="1" Column="1" />
+      <File FileName="Levels/Levels.cs" Line="1" Column="1" />
+      <File FileName="Characters/Faction.cs" Line="1" Column="1" />
+      <File FileName="Characters/Character.cs" Line="1" Column="1" />
+      <File FileName="GameRenderer/ConsoleRenderer.cs" Line="1" Column="1" />
+      <File FileName="Levels/Tile.cs" Line="1" Column="1" />
+      <File FileName="Items/Item.cs" Line="1" Column="1" />
+      <File FileName="Characters/PlayerCharacter.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,6 +26,7 @@
             <Node name="Effects" expanded="True" />
             <Node name="Enums" expanded="True" />
             <Node name="Game" expanded="True" />
+            <Node name="GameRenderer" expanded="True" />
             <Node name="ItemComponents" expanded="True" />
             <Node name="Items" expanded="True" />
             <Node name="Levels" expanded="True" />

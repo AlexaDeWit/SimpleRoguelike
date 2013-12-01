@@ -3,14 +3,11 @@ using Levels;
 using Characters;
 
 namespace GameRenderer {
-	public class ConsoleRenderer {
-		private Level _level;
-		public ConsoleRenderer(Level levelToRender){
-			_level = levelToRender;
+	public class ConsoleRenderer : Renderer {
+
+		public ConsoleRenderer(Level levelToRender): base(levelToRender){
 		}
-		public void SetLevel(Level newLevel){
-			_level =newLevel;
-		}
+
 		public void WriteToConsole(){
 			for (int x=0; x<_level.Width(); x++) {
 				for (int y=0; y<_level.Height(); y++) {

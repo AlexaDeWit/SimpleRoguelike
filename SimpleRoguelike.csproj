@@ -69,6 +69,9 @@
     <Compile Include="Enums\DIRECTION.cs" />
     <Compile Include="Enums\ITEM_SLOT.cs" />
     <Compile Include="GameRenderer\ConsoleRenderer.cs" />
+    <Compile Include="Game\GameControler.cs" />
+    <Compile Include="GameRenderer\Renderer.cs" />
+    <Compile Include="GameRenderer\GraphicalRenderer.cs" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
