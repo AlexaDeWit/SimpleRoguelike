@@ -1,18 +1,21 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Enums/GAME_COMMAND.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Enums/GAME_COMMAND.cs" Line="8" Column="17" />
-      <File FileName="Enums/DIRECTION.cs" Line="1" Column="1" />
+      <File FileName="Enums/GAME_COMMAND.cs" Line="13" Column="15" />
+      <File FileName="Enums/DIRECTION.cs" Line="12" Column="1" />
       <File FileName="Enums/ITEM_SLOT.cs" Line="1" Column="1" />
       <File FileName="Game/Game.cs" Line="1" Column="1" />
       <File FileName="Levels/Levels.cs" Line="1" Column="1" />
       <File FileName="Characters/Faction.cs" Line="1" Column="1" />
       <File FileName="Characters/Character.cs" Line="1" Column="1" />
-      <File FileName="GameRenderer/ConsoleRenderer.cs" Line="1" Column="1" />
+      <File FileName="GameRenderer/ConsoleRenderer.cs" Line="13" Column="43" />
       <File FileName="Levels/Tile.cs" Line="1" Column="1" />
       <File FileName="Items/Item.cs" Line="1" Column="1" />
       <File FileName="Characters/PlayerCharacter.cs" Line="1" Column="1" />
+      <File FileName="Game/GameControler.cs" Line="34" Column="59" />
+      <File FileName="GameRenderer/Renderer.cs" Line="7" Column="10" />
+      <File FileName="GameRenderer/GraphicalRenderer.cs" Line="4" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
